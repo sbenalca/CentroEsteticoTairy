@@ -14,7 +14,8 @@ Sitio Web para el Centro Estético Tairy como proyecto de la materia de DAWM per
 *Descripcion*
 
 ## **Enlace al diseño del sitio web.**
-*Prototipo*
+* https://xd.adobe.com/view/25d80548-967d-40cc-ae59-5a7c32929a42-708b/
+(PDF con el diseño adjunto en el repositorio)
 
 ## **Enlace a la plantilla de Bootstrap.**
 * https://startbootstrap.com/themes/business-casual/
