@@ -5,6 +5,8 @@
 
 body {
     background: linear-gradient(-10deg, rgb(5,97,46) 50%, rgb(121,181,48) 50%);
+    background-size: auto;
+    background-repeat: no-repeat;
     color: grey;
     font-family: 'Noto Sans JP', sans-serif;
 }
