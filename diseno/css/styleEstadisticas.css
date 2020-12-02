@@ -56,7 +56,7 @@ a:hover {
     height: 40%;
     background-color: #7db63d;
     z-index: -1;
-    background-image: url('diseno\img\logo1.PNG');
+    background-image: url('diseño\img\logo1.PNG');
 }
 .w-100{
   overflow-y: auto;
@@ -174,13 +174,9 @@ section.partners{
   font-size: large;
   font: bold 90% sans-serif;
 }
-#Gbarras{
+#Gbarras, #Gpastel{
   width:450px; 
   height:270px;
-}
-#Gpastel{
-  width:450px; 
-  height:268px;
 }
 
 .map-ciudades, .consejos{
