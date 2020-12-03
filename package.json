@@ -1,0 +1,23 @@
+{
+  "name": "CentroEsteticoTairy",
+  "version": "1.0.0",
+  "description": "Sitio Web para el Centro Estético Tairy como proyecto de la materia de DAWM periodo 2020-2S.",
+  "main": "cuadrosEstadisticos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbenalca/CentroEsteticoTairy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbenalca/CentroEsteticoTairy/issues"
+  },
+  "homepage": "https://github.com/sbenalca/CentroEsteticoTairy#readme",
+  "dependencies": {
+    "intro.js": "^3.1.0"
+  }
+}

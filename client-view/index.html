@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Font Awesome-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/beyond-the-mountains" rel="stylesheet">
+    
+    <!--CSS StyleSheet-->
+    <link rel="stylesheet" href="./css/index.css"/>
+    <link rel="icon" href="../recursos/originallogo.svg">
+
+    <!--MapBox-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!--Intro.js-->
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+    <title>Centro Estético Tairy</title>
+</head>
+<body>
+    <section id="header">
+        <div id="redes">
+            <ul data-intro='Aqui puedes acceder a las redes sociales'>
+                <li>
+                    <a href="">
+                        <i class="social-icon fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Centro-Est%C3%A9tico-Tairy-570249216688686/">
+                        <i class="social-icon fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/centroesteticotairy/">
+                        <i class="social-icon fab fa-instagram"></i>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div id="menu" class="navbar navbar-expand-lg navbar-light" data-intro='Aqui puedes navegar por todas las ventanas de la pagina'>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="logo navbar-brand">
+                <img src="../recursos/originallogo.svg" alt="Logo Centro Estetico Tairy" class = "logo" width=100% height=100%>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a href="index.html" class="opcion nav-link" >INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="equipo.html" class="opcion nav-link">EQUIPO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="opcion nav-link">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="promociones.html" class="opcion nav-link" >PROMOCIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="opcion nav-link" >CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registro.html" class="opcion nav-link"> REGISTRATE </a>
+                    </li>
+                </ul>           
+            </div>
+        </div>
+    </section>
+    
+    <section id="bienvenida">
+        <div class="row row-cols-lg-2 row-cols-1">
+            <div class="info-bienvenida">
+                <h1 class="titulo">Bienvenidos</h1>
+                <img class="logo" src="../recursos/logoiconwhite.svg" alt="logo">
+                <p id="slogan1">Nuestra razon de ser esta basada en la idea de brindar</p>
+                <p id="slogan2">Salud, belleza y bienestar</p>
+                <button class="btn btn-light" onclick="javascript:introJs().start();">Comienza el recorrido</button>
+            </div>
+            <div class="portada">
+                <img src="../recursos/senora_preview_rev_1.png" alt="portada">
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h1>Nuestros Servicios</h1>
+        <hr>
+        <div class="servicios-img" data-intro='Aqui podemos ver el top de servicios que ofrecemos'>
+            <img src="../recursos/servicios1.jpg" alt="">
+            <img src="../recursos/servicios2.jpg" alt="">
+            <img src="../recursos/servicios3.jpg" alt="">
+            <img src="../recursos/servicios4.png" alt="">
+            <img src="../recursos/servicios5.jpg" alt="">
+            <img src="../recursos/servicios6.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="comentarios" >
+        <h1>Comentarios de Nuestros Clientes</h1>
+        <hr>
+        <div id="comentarios-carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause:hover>
+          <div class="carousel-inner" data-intro='Carrusel de comentarios de nuestros clientes'>
+          </div>
+          <a class="carousel-control-prev" href="#comentarios-carousel" role="button" data-slide="prev">
+            <i class="icon-control fas fa-chevron-left"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#comentarios-carousel" role="button" data-slide="next">
+            <i class="icon-control fas fa-chevron-right"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+    <section id="mapa" >
+        <h1>Como llegar?</h1>
+        <hr>
+        <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=1SfMHq1rkDQeeXuq-B6tEl4eFDyzlEFAh" height="500" data-intro='Podemos ver la ubicaciones de nuestro local'></iframe>
+
+    </section>
+
+    <footer>
+        <div class="contact-grid">
+            <img class="img-footer" src="../recursos/logo1.PNG" alt="">
+            <div class="info">
+                <h2>Contactos</h2>
+                <div class="contact-info" data-intro='Datos de contacto'>
+                    <p class="dato">Correo Electronico: </p>
+                    <p>cet@hotmail.com</p>
+                    <p class="dato">Numeros de contacto: </p>
+                    <span>04-2539874</span>        
+                    <span>04-2369874</span>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p> <i class="fas fa-copyright"></i> Copyright</p>
+    </footer>
+    <script src="./js/add_comments.js"></script>
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+</body>
+</html>
