@@ -25,9 +25,9 @@ En el sitio web se implementada:
 *	Información de los certificados adquiridos.
 
 
-## **Enlace al diseño del sitio web.**
+## **Enlace al diseno del sitio web.**
 * https://xd.adobe.com/view/25d80548-967d-40cc-ae59-5a7c32929a42-708b/
-(PDF con el diseño adjunto en el repositorio)
+(PDF con el diseno adjunto en el repositorio)
 
 ## **Enlace a la plantilla de Bootstrap.**
 * https://startbootstrap.com/themes/business-casual/
