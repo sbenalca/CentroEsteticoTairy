@@ -49,31 +49,48 @@
                 
             </ul>
         </div>
-        <div id="menu" class="navbar navbar-light">
-            <a href="index.html" class="opcion" >INICIO</a>
-            <a href="promociones.html" class="opcion" >PROMOCIONES</a>
-            <a href="servicios.html" class="opcion">SERVICIOS</a>
-            <a href="index.html" class="logo">
-                <img src="../recursos/originallogo.svg" alt="Logo Centro Estetico Tairy" width=100% height=100%>
+        <div id="menu" class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="logo navbar-brand">
+                <img src="../recursos/originallogo.svg" alt="Logo Centro Estetico Tairy" class = "logo" width=100% height=100%>
             </a>
-            <a href="equipo.html" class="opcion">EQUIPO</a>
-            <a href="contacto.html" class="opcion" >CONTACTO</a>
-            <a href="registro.html" class="opcion">
-                <button class="btn btn-success">REGISTRATE</button>
-            </a>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a href="index.html" class="opcion nav-link" >INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="promociones.html" class="opcion nav-link" >PROMOCIONES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicios.html" class="opcion nav-link">SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="equipo.html" class="opcion nav-link">EQUIPO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contacto.html" class="opcion nav-link" >CONTACTO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="registro.html" class="opcion nav-link"> REGISTRATE </a>
+                    </li>
+                </ul>           
+            </div>
         </div>
     </section>
     
     <section id="bienvenida">
-        <div class="row row-cols-2">
+        <div class="row row-cols-lg-2 row-cols-1">
             <div class="info-bienvenida">
                 <h1 class="titulo">Bienvenidos</h1>
-                <img class="img1" src="../recursos/logoiconwhite.svg" alt="">
+                <img class="logo" src="../recursos/logoiconwhite.svg" alt="logo">
                 <p id="slogan1">Nuestra razon de ser esta basada en la idea de brindar</p>
                 <p id="slogan2">Salud, belleza y bienestar</p>
                 <button class="btn btn-light">Agenda tu cita</button>
             </div>
-            <img src="../recursos/senora_preview_rev_1.png" alt="">
+            <img class="portada" src="" alt="portada">
         </div>
     </section>
 

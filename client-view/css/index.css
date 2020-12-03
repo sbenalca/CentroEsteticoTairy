@@ -14,7 +14,7 @@ body{
 h1{
     color: #7db63d;
     font-family: 'Beyond The Mountains', sans-serif;
-    font-size: 3rem;              
+    font-size: 300%;              
 }
 
 hr{
@@ -25,6 +25,7 @@ hr{
 /*HEADER*/
 
 /*Redes*/
+
 #redes{
     position: absolute;
     top: 1rem;
@@ -47,20 +48,36 @@ hr{
 
 /*Menu*/
 #menu{
-    margin: 0rem 15rem 1rem;
+    margin: 0rem 15rem 0rem;
 }
 
 .opcion{
     color: #185f33;
     font-weight: bold;
     font-size: large;
+    margin-right: 3.5rem;
+}
+
+.logo{
+    max-width: 100%;
+    min-width: 15%;
+}
+
+@media screen and (max-width: 1000px){
+    #redes, .portada{
+        display: none;
+    }
+
+    #menu{
+        margin: 0rem 3rem 1rem 1rem;
+    }
 }
 
 /*BIENVENIDA*/
 
 .titulo{
     color: #185f33;
-    font-size: 5rem;
+    font-size: 500%;
 }
 
 #bienvenida{
@@ -99,7 +116,7 @@ hr{
     display: grid;
     grid-template-columns: 10% 90%;
     padding: 1.5rem;
-    box-shadow: 5px 5px #a5a5a53a;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .comentarios-image{
