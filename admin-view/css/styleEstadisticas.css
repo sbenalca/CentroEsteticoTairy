@@ -9,6 +9,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     height: auto;
+
      
 }
 .bg-light {
@@ -62,6 +63,7 @@ a:hover {
   overflow-y: auto;
   height: 100vh;
   padding-bottom: 10rem;
+  
 }
 /*div#sidebar-container {
   position: static;
@@ -179,12 +181,18 @@ section.partners{
   height:270px;
 }
 
-.map-ciudades, .consejos{
+.map-ciudades{
   padding: 20px 20px 5px 5px;
   background-color: #ffffff;
   box-shadow: 1px 1px 5px 3px #8898aa;
   border-radius: 10px;
 }
+.consejos{
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px 3px #8898aa;
+  border-radius: 10px;
+}
+
 section.map-ciudades{
   display: inline-block;
   width: 70.5%;
@@ -206,16 +214,17 @@ section.consejos{
   border-bottom: 2px solid #8898aa;
 }
 #imgConsejos{
-  display: inline-flex;
-  width:270px; 
-  height:100px;
-  padding: 0px 0px;
+  display: inline-block;
+  width:370px; 
+  height:150px;
   margin-top: 0px;
+  border-radius:  0px 0px 10px 10px;
 }
+
 #mapa{
   display: inline-block;
   width: 74%;
-  width:500px; 
+  width:400px; 
   height:400px;
 }
 #valmapa{
@@ -239,13 +248,12 @@ section.consejos{
   background-color: #ffffff;
   border-radius: 5px;
   font-size: small;
-
 }
 #botonMapa{
   margin-left: 480px;
 }
 .textoConsejo{
-  padding: 15px 20px 0px 20px;
+  padding: 35px 40px 5px 25px;
 }
 #tituloConsejo{
   color:#172b4d;
@@ -263,7 +271,7 @@ section.consejos{
   line-height: 1;
 }
 #botonedit{
-    border:none;
+  border:none;
   color: #7db63d;
   background-color: #ffffff;
   font-size: x-small;
@@ -339,6 +347,9 @@ section.servicios{
 table{
    width: 100%;
 }
+th{
+  background-color: #f1f3f9;
+}
 #circulo {
   width: 10px;
   height: 10px;
@@ -349,3 +360,51 @@ table{
 input[type='radio'] { 
  -webkit-appearance: none; 
 } 
+.map{
+  display: inline-flex;
+}
+#my_dataviz{
+  width:580px;
+  height:300px
+  margin:4px;
+  padding-right: 5px;
+}
+progress[value]{
+  width: 150px;
+  height: 7px;
+  -webkit-appearance: none;
+   appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #b7c1cc;
+  border-radius: 5px;
+  
+}
+progress[value]#file1::-webkit-progress-value{
+   background-color: #ff9b37;
+   border-radius: 5px;
+}
+progress[value]#file2::-webkit-progress-value{
+   background-color: #e42123;
+   border-radius: 5px;
+}
+progress[value]#file3::-webkit-progress-value{
+   background-color: #579db4;
+   border-radius: 5px;
+}
+progress[value]#file4::-webkit-progress-value{
+   background-color: #7ac077;
+   border-radius: 5px;
+}
+
+progress[value]#progTratam{
+  width: 60px;
+  height: 5px;
+  -webkit-appearance: none;
+   appearance: none;
+}
+
+progress[value]#progTratam::-webkit-progress-value{
+  background-color: #e41a1c;
+   border-radius: 5px
+}
