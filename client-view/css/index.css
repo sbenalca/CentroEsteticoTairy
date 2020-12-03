@@ -48,7 +48,7 @@ hr{
 
 /*Menu*/
 #menu{
-    margin: 0rem 15rem 0rem;
+    margin: 0rem 10% 0rem;
 }
 
 .opcion{
@@ -67,17 +67,13 @@ hr{
     #redes, .portada{
         display: none;
     }
-
-    #menu{
-        margin: 0rem 3rem 1rem 1rem;
-    }
 }
 
 /*BIENVENIDA*/
 
 .titulo{
     color: #185f33;
-    font-size: 500%;
+    font-size: 400%;
 }
 
 #bienvenida{
@@ -109,10 +105,10 @@ hr{
 
 .cliente{
     background-color: white;
-    max-width: 60%;
-    min-width: 60%;
+    max-width: 50%;
+    min-width: 50%;
     position: relative;
-    left: 20%;
+    left: 25%;
     display: grid;
     grid-template-columns: 10% 90%;
     padding: 1.5rem;
@@ -129,6 +125,11 @@ hr{
     text-align: justify;
     line-height: 1.5;
     color: #707070 ;
+    font-size: large;
+}
+
+.icon-control{
+    color: #185f33;
     font-size: x-large;
 }
 
@@ -143,11 +144,38 @@ hr{
 
 footer{
     background-color: #7db63d;
-    padding: 1rem 15rem;
+    padding: 2% 15%;
+    color: white;
+}
+
+h2{
+    margin-top: 5%;
+    font-family: 'Beyond The Mountains', sans-serif;
+    margin-bottom: 3%;
+    color: #185f33 ;
 }
 
 .contact-grid{
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 30% 70%;
 }
 
+.img-footer{
+    margin-top: 5%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.contact-info{
+    font-style: italic;
+    font-size: medium;
+}
+
+.info{
+    padding-top: 3%;
+    margin-left: 20%;
+}
+
+.dato{
+    font-weight: bold;
+}
