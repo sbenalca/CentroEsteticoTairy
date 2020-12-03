@@ -6,7 +6,7 @@ body{
 }
 
 #servicios, #comentarios, #mapa{
-    padding: 4rem;
+    padding: 3rem;
     text-align: center;
     background-color: #fafafa;
 }
@@ -14,7 +14,7 @@ body{
 h1{
     color: #7db63d;
     font-family: 'Beyond The Mountains', sans-serif;
-    font-size: 300%;              
+    font-size: 3.5vw;              
 }
 
 hr{
@@ -34,12 +34,12 @@ hr{
 
 #redes ul li{
     list-style: none;
-    padding-bottom: 2.5rem;
+    padding-bottom: 3rem;
 }
 
 #redes ul li i{
     color: #7db63d;
-    font-size: x-large;
+    font-size: large;
 }
 
 #redes ul{
@@ -73,33 +73,49 @@ hr{
 
 .titulo{
     color: #185f33;
-    font-size: 400%;
+    font-size: 6vw;
 }
 
 #bienvenida{
     background-image: linear-gradient(to top right, #7db63d ,#dcebcc, #ffffff);
 }
 
+.portada > img {
+    max-width: 80%;
+    min-width: 80%;
+}
+
 #slogan1{
     color: #707070;
-    margin-top: 1rem;
+    margin-top: 2vw;
     margin-bottom: 0%;
 }
 
 #slogan2{
     color: #185f33;
     font-weight: bold;
-    font-size: x-large;
+    font-size: 2vw;
 }
 
 .info-bienvenida{
     text-align: center;
     padding: 3rem;
-    font-size: large;
     font-style: italic;
 }
 
 /*SERVICIOS*/
+
+.servicios-img{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0rem 15%;
+    column-gap: 2px;
+    row-gap: 2px;
+}
+
+.servicios-img > img{
+    max-width: 30%;
+}
 
 /*COMENTARIOS*/
 
@@ -111,21 +127,23 @@ hr{
     left: 25%;
     display: grid;
     grid-template-columns: 10% 90%;
-    padding: 1.5rem;
+    padding: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .comentarios-image{
-    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
     border-radius: 100%;
 }
 
 .comentarios-text{
-    margin-left: 2rem;
+    margin-left: 4%;
     text-align: justify;
     line-height: 1.5;
     color: #707070 ;
-    font-size: large;
+    font-size: 1vw;
+    width: 90%;
 }
 
 .icon-control{
@@ -153,6 +171,7 @@ h2{
     font-family: 'Beyond The Mountains', sans-serif;
     margin-bottom: 3%;
     color: #185f33 ;
+    font-size: 2vw;
 }
 
 .contact-grid{
@@ -168,7 +187,7 @@ h2{
 
 .contact-info{
     font-style: italic;
-    font-size: medium;
+    font-size: 1.25vw;
 }
 
 .info{

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!--Font Awesome-->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -50,7 +51,7 @@
             </ul>
         </div>
         <div id="menu" class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href="index.html" class="logo navbar-brand">
@@ -90,7 +91,9 @@
                 <p id="slogan2">Salud, belleza y bienestar</p>
                 <button class="btn btn-light">Agenda tu cita</button>
             </div>
-            <img class="portada" src="" alt="portada">
+            <div class="portada">
+                <img src="../recursos/senora_preview_rev_1.png" alt="portada">
+            </div>
         </div>
     </section>
 
@@ -98,27 +101,20 @@
         <h1>Nuestros Servicios</h1>
         <hr>
         <div class="servicios-img">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="../recursos/servicios1.jpg" alt="">
+            <img src="../recursos/servicios2.jpg" alt="">
+            <img src="../recursos/servicios3.jpg" alt="">
+            <img src="../recursos/servicios4.png" alt="">
+            <img src="../recursos/servicios5.jpg" alt="">
+            <img src="../recursos/servicios6.jpg" alt="">
         </div>
     </section>
 
     <section id="comentarios">
         <h1>Comentarios de Nuestros Clientes</h1>
         <hr>
-        <div id="comentarios-carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause:"hover">
+        <div id="comentarios-carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause:hover>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="cliente">
-                    <img class="comentarios-image" src="../recursos/usuario.png" alt="cliente">
-                    <div class="comentarios-text">
-                        <p >Think classic lorem ipsum is passé? Give your next project. a bit more edge with these funny and unique text generators.</p>
-                        <p>- Nicole Agila</p>
-                    </div>
-                </div>
-            </div>
           </div>
           <a class="carousel-control-prev" href="#comentarios-carousel" role="button" data-slide="prev">
             <i class="icon-control fas fa-chevron-left"></i>
@@ -155,5 +151,6 @@
         <hr>
         <p> <i class="fas fa-copyright"></i> Copyright</p>
     </footer>
+    <script src="./js/add_comments.js"></script>
 </body>
 </html>
