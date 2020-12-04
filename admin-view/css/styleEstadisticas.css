@@ -63,11 +63,7 @@ a:hover {
   height: 100vh;
   padding-bottom: 10rem;
 }
-/*div#sidebar-container {
-  position: static;
-}*/
-
-section#item1, #item2,#item3 {
+.item1, .item2,.item3 {
   padding: 5px 5px 5px 10px;
   background-color: #ffffff;
   border-spacing: 10px 30px;
@@ -75,38 +71,38 @@ section#item1, #item2,#item3 {
   border-radius: 10px;
   
 }
-section#item2a, #item1a, #item3a{
+.item2a, .item1a, .item3a{
   display: inline-block;
-  width: 75%;
+  width: 20%;
 }
-section#item2b, #item1b, #item3b{
+.item2b, .item1b, .item3b{
   display: inline-block;
-  width: 23%;
+  width: 20%;
   top: 10px;
 }
 
-#li-1{
+.li-1{
   color:#8898aa;
   font-weight: bold;
   font-size: x-small;
 }
-#li-2{
+.li-2{
   color: #4d4f5c;
   font-weight: bold;
   font-size: large;
 }
 
-section.li-3aA{
+div.li-3aA{
   color: #2dce98;
   display: inline-block;
   width: 24%;
 }
-section.li-3bA{
+.li-3bA{
   color: #f53c56;
   display: inline-block;
   width: 24%;
 }
-section.li-3cA{
+.li-3cA{
   color: #11cdef;
   display: inline-block;
   width: 24%;
@@ -148,13 +144,13 @@ ul{
   box-shadow: 1px 1px 5px 3px #8898aa;
   border-radius: 10px;
 }
-section.OVERVIEW{
+.OVERVIEW{
   display: inline-block;
   width: 48%;
   margin-left: 10px;
   margin-right: 5px;
 }
-section.partners{
+.partners{
   display: inline-block;
   width: 48%;
   margin-left: 10px;
@@ -191,13 +187,13 @@ section.partners{
   border-radius: 10px;
 }
 
-section.map-ciudades{
+.map-ciudades{
   display: inline-block;
   width: 70.5%;
   margin-left: 12px;
   margin-right: 5px;
 }
-section.consejos{
+.consejos{
   display: inline-block;
   width: 25%;
   margin-left: 10px;
@@ -283,7 +279,7 @@ section.consejos{
   border-radius: 5px;
   margin-left: 10px;
 }
-section.servicios{
+.servicios{
   margin-top: 15px;
   margin-left: 10px;
   margin-right: 20px;
