@@ -1,0 +1,115 @@
+@import url('http://fonts.cdnfonts.com/css/beyond-the-mountains');
+
+/*BIENVENIDA*/
+
+#bienvenida{
+    background-image: linear-gradient(to top right, #7db63d ,#dcebcc, #ffffff);
+}
+
+.portada{
+    text-align: center;
+}
+
+.portada > .logo {
+    max-width: 40%;
+    min-width: 40%;
+    margin: 5%;
+}
+
+#slogan1{
+    color: #707070;
+    margin-top: 2vw;
+    margin-bottom: 0%;
+    font-size: 1.35vw;
+}
+
+#slogan2{
+    color: #185f33;
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.info-bienvenida{
+    text-align: center;
+    padding: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-style: italic;
+}
+
+/*CUENTANOS*/
+
+.row.row-cols-lg-2.row-cols-1{
+    margin: 0 10%;
+}
+
+.descripcion{
+    text-align: justify;
+    padding: 5% 5% 0 5%;
+    font-size: 100%;
+}
+
+#contactanos{
+    margin-top: 2rem;
+    background-color: #7db63d;
+    padding-left: 0;
+}
+
+#contactanos img{
+    margin-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+#contactanos div{
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#formLayout {
+    
+    background-color: #ffffff !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.5rem !important;
+}
+
+
+#formLayout legend {
+    color: #185f33;
+    font-size: 2.5vw;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-family: 'Beyond The Mountains', sans-serif;
+    
+}
+
+
+
+#formLayout label{
+    text-align: left;
+    margin-right: auto;
+}
+
+.btn-primary{
+    margin-top: 1.5rem;
+    background-color: #185f33;
+    border-color: #185f33;
+    border-radius: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-primary:hover{
+    
+    background-color: #7db63d;
+    border-color: #185f33;
+    border: 5px;
+
+}

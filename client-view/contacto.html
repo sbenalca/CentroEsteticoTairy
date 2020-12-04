@@ -19,15 +19,12 @@
     <link href="http://fonts.cdnfonts.com/css/beyond-the-mountains" rel="stylesheet">
     
     <!--CSS StyleSheet-->
-    <link rel="stylesheet" href="./css/equipo.css"/>
     <link rel="stylesheet" href="./css/general.css"/>
+    <link rel="stylesheet" href="./css/contacto.css"/>
     <link rel="icon" href="../recursos/originallogo.svg">
 
-    <!--MapBox-->
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
 
-    <title>Equipo CET</title>
+    <title>Contacto CET</title>
 </head>
 <body>
     <section id="header">
@@ -63,7 +60,7 @@
                     <li class="nav-item">
                         <a href="index.html" class="opcion nav-link" >INICIO</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="equipo.html" class="opcion nav-link">EQUIPO</a>
                     </li>
                     <li class="nav-item">
@@ -72,7 +69,7 @@
                     <li class="nav-item">
                         <a href="promociones.html" class="opcion nav-link" >PROMOCIONES</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="contacto.html" class="opcion nav-link" >CONTACTO</a>
                     </li>
                 </ul>           
@@ -88,98 +85,56 @@
             <div class="info-bienvenida col-lg-6">
                 <p id="slogan1">Nuestra razon de ser esta basada en la idea de brindar</p>
                 <p id="slogan2">Salud, belleza y bienestar</p>
-                <button class="btn btn-light">Agenda tu cita</button>
             </div>
         </div>
     </section>
 
-    <section id="nosotros">
-        <h1>Quienes somos?</h1>
+    <section id="cuentanos">
+        <h1>Cuéntanos tu experiencia</h1>
         <hr>
-        <h3>Somos un centro estético, con certificación internacional</h3>
-        <div class="row row-cols-lg-2 row-cols-1">
-            <div class="descripcion">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                    ultricies sapien quam, ac venenatis felis scelerisque id. hasellus
-                    in facilisis elit. Lorem ipsum dolor sit amet, onsectetur dipiscing
-                    elit. Class aptent taciti sociosqu ad litora torquent per.</p>
-                <p>Orci varius natoque penatibus et magnis dis parturient montes,
-                    nascetur ridiculus mus. Sed sit amet arcu quis neque molestie
-                    feugiat at nec erat. Donec in dolor lobortis, viverra turpis sit ame</p>
-            </div>
-            <div class="img-descripcion">
-                <img src="../recursos/senora_preview_rev_1.png" alt="">
-            </div>
+        <div id="contactanos" class="row row-cols-lg-2 row-cols-1">
             
+
+            <img src="/recursos/servicios1.jpg" alt="imagen" class="col-lg-5">
+            <div  class="col-lg-7">
+                <div id="formLayout"> 
+                    <form>
+                        <legend>Déjanos un mensaje</legend>
+
+                        <div class="form-group row">
+                            <label for="contact-nombre">Nombre: *</label>
+                            <input type="text" class="form-control" id="contact-nombre" placeholder="Escribe tu nombre completo aquí.">
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="contact-nacimiento">Fecha de nacimiento: *</label>
+                            <input type="date" class="form-control" id="contact-nacimiento" name="nacimiento" value="2020-12-03" min="1950-12-03" max="2002-12-03">
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="contact-ciudad">Ciudad: *</label>
+                            <select id="contact-ciudad" class="form-control">
+                              <option selected>Selecciona una ciudad...</option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="contact-mail">Correo Electrónico: *</label>
+                            <input type="email" class="form-control" id="contact-mail" placeholder="ejemplo@gmail.com" >
+                        </div>
+  
+                        <div class="form-group row">
+                            <label for="contact-detalle">Mensaje: *</label>
+                            <textarea class="form-control" id="contact-detalle" placeholder="Escribe tu mensaje aquí." rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </form>
+                </div>
+            </div>
+
         </div>
 
-    </section>
-
-    <section id="valores">
-        <h1>Nuestros Valores</h1>
-        <hr>
-        <div class="valores-grid row">
-            <div class="valor col-lg-3">
-                <h2>Los clientes son lo primero</h2>
-                <p>Escuchamos, apoyamos y
-                    nos comunicamos. Nuestra
-                    principal prioridad es
-                    superar los objetivos de
-                    nuestros clientes y adaptar
-                    nuestro enfoque para
-                    lograrlo</p>
-            </div>
-            <div class="valor col-lg-3">
-                <h2>Los clientes son lo primero</h2>
-                <p>Escuchamos, apoyamos y
-                    nos comunicamos. Nuestra
-                    principal prioridad es
-                    superar los objetivos de
-                    nuestros clientes y adaptar
-                    nuestro enfoque para
-                    lograrlo</p>
-            </div>
-            <div class="valor col-lg-3">
-                <h2>Los clientes son lo primero</h2>
-                <p>Escuchamos, apoyamos y
-                    nos comunicamos. Nuestra
-                    principal prioridad es
-                    superar los objetivos de
-                    nuestros clientes y adaptar
-                    nuestro enfoque para
-                    lograrlo</p>
-            </div>
-            <div class="valor col-lg-3">
-                <h2>Los clientes son lo primero</h2>
-                <p>Escuchamos, apoyamos y
-                    nos comunicamos. Nuestra
-                    principal prioridad es
-                    superar los objetivos de
-                    nuestros clientes y adaptar
-                    nuestro enfoque para
-                    lograrlo</p>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="equipo">
-        <h1>El Equipo</h1>
-        <hr>
-        <div class="equipo-grid row">
-        </div>
-
-    </section>
-
-    <section id="certificados">
-        <h1>Certificados obtenidos</h1>
-        <hr>
-        <div class="row certificados-grid">
-            <img class="col-lg-3" src="../recursos/certificado.png" alt="certificado">
-            <img class="col-lg-3" src="../recursos/certificado.png" alt="certificado">
-            <img class="col-lg-3" src="../recursos/certificado.png" alt="certificado">
-            <img class="col-lg-3" src="../recursos/certificado.png" alt="certificado">
-        </div>
     </section>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -204,6 +159,6 @@
         <hr>
         <p> <i class="fas fa-copyright"></i> Copyright</p>
     </footer>
-    <script src="./js/add_integrantes.js"></script>
+    <script src="./js/add_cities.js"></script>
 </body>
 </html>

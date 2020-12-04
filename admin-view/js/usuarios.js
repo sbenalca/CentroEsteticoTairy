@@ -1,14 +1,3 @@
-let editarConsejo=(button)=>{
-  var x = document.getElementById("contenidoConsejo");
-  if (x.contentEditable == "true") {
-    x.contentEditable = "false";
-    button.innerHTML = "Edit Tip";
-  } else {
-    x.contentEditable = "true";
-    button.innerHTML = "Save!";
-  }
-}
-
 Paginador = function(divPaginador, tabla, tamPagina)
 {
     this.miDiv = divPaginador; //un DIV donde irán controles de paginación
@@ -84,9 +73,9 @@ Paginador = function(divPaginador, tabla, tamPagina)
     }
 }
 
-//Cargar los datos del json
 let cargarDatos = () => {
-  fetch('../recursos/tratamientos.json')
+
+  fetch('../recursos/integrantes.json')
   .then( (resultado) => {
      //Transforma en texto
 
@@ -98,21 +87,15 @@ let cargarDatos = () => {
     //creo la tabla
     let table = document.createElement("table");
     table.setAttribute('id',"mitabla");
-
     //creo la cabecera de la tabal
     let trcabecera = document.createElement("tr");
-    trcabecera.setAttribute("id","tratamiento")
+    trcabecera.setAttribute("id","usuario")
 
-    let thcheck = document.createElement("th")
-    let thbox = document.createElement("input")
-    thbox.setAttribute("type","checkbox");
-    thbox.setAttribute("id","chbox");
-    thbox.setAttribute("disabled","");
-    thcheck.appendChild(thbox);
-    trcabecera.appendChild(thcheck);
+    let thimg = document.createElement("th")
+    trcabecera.appendChild(thimg);
 
     let thtratamiento = document.createElement("th");
-    thtratamiento.textContent = "SERVICIO";
+    thtratamiento.textContent = "USUARIO";
     trcabecera.appendChild(thtratamiento);
 
     let thfecha = document.createElement("th");
@@ -123,14 +106,18 @@ let cargarDatos = () => {
     thstatus.textContent = "STATUS";
     trcabecera.appendChild(thstatus);
 
+    let thsalario = document.createElement("th");
+    thsalario.textContent = "SALARIO";
+    trcabecera.appendChild(thsalario);
+
+    let thagregado = document.createElement("th");
+    thagregado.textContent = "AGREGADO POR:";
+    trcabecera.appendChild(thagregado);
+
     let thcompletion = document.createElement("th");
     thcompletion.textContent = "COMPLETION";
     trcabecera.appendChild(thcompletion);
 
-    let thcategoria = document.createElement("th");
-    thcategoria.textContent = "VISIBILIDAD";
-    trcabecera.appendChild(thcategoria);
-    
     table.appendChild(trcabecera)
 
     //accedo a cada elemento y lo pongo en la tabla
@@ -139,17 +126,19 @@ let cargarDatos = () => {
       
       let tr = document.createElement("tr")
 
-      let tdcheck = document.createElement("td")
-      let tdbox = document.createElement("input")
-      tdbox.setAttribute("type","checkbox");
-      tdbox.setAttribute("id","chbx");
-      tdcheck.appendChild(tdbox);
-      tr.appendChild(tdcheck);
+      let tdimg = document.createElement("td")
+      let img = document.createElement("img")
+      img.setAttribute("src","../diseno/img/usuario.png");
+      img.setAttribute("id","imgIntegrante")
+
+      tdimg.appendChild(img);
+      tr.appendChild(tdimg);
       
       let tdnombre = document.createElement("td")
-      tdnombre.textContent =persona.nombre 
+      tdnombre.textContent =persona.integrante
+      tdnombre.setAttribute("id","nombreIntegrante")
       tr.appendChild(tdnombre)
-      //person.push( tdTextnombre[0].textContent)
+
       let tdfecha= document.createElement("td")
       tdfecha.textContent ="20/03/2020 "
       tr.appendChild(tdfecha)
@@ -163,6 +152,18 @@ let cargarDatos = () => {
       tdestado.appendChild(circulo)
       tr.appendChild(tdestado)
 
+      let tdsalario= document.createElement("td")
+      tdsalario.textContent ="$550"
+      tr.appendChild(tdsalario)
+
+      let tdimgAgr = document.createElement("td")
+      tdimgAgr.setAttribute("id","imgAgr")
+      let imgAgr = document.createElement("img")
+      imgAgr.setAttribute("src","../diseno/img/usuario.png");
+      imgAgr.setAttribute("id","imgAgregado")
+      tdimgAgr.appendChild(imgAgr);
+      tr.appendChild(tdimgAgr);
+
       let tdavance = document.createElement("td")
       tdavance.setAttribute("id","porcentaje")
       let progreso=document.createElement("progress")
@@ -172,32 +173,15 @@ let cargarDatos = () => {
       tdavance.textContent = "40% "
       tdavance.appendChild(progreso)
       tr.appendChild(tdavance)
-      
-      let tdswitch= document.createElement("td")
-      tdswitch.setAttribute("class","switch-button")
-      let inputSwitch=document.createElement("input")
-      inputSwitch.setAttribute("id","switch-label")
-      inputSwitch.setAttribute("type","checkbox")
-      inputSwitch.setAttribute("class","switch-button__checkbox")
-      inputSwitch.setAttribute("name","switch-button")
-      
-      let labelSwitch=document.createElement("label")
-      labelSwitch.setAttribute("for","switch-label")
-      labelSwitch.setAttribute("class","switch-button__label")
-
-      tdswitch.textContent = " "
-      tdswitch.appendChild(inputSwitch)
-      tdswitch.appendChild(labelSwitch)
-      tr.appendChild(tdswitch)
 
       table.appendChild(tr)
       
     }
     //Agregamos la tabla al nodo en el html
-    document.getElementById('servicios').appendChild(table);
+    document.getElementById('listaUsuarios').appendChild(table);
 
-    var p = new Paginador(document.getElementById('servicios'),
-    document.getElementById('mitabla'),6);
+    var p = new Paginador(document.getElementById('listaUsuarios'),
+    document.getElementById('mitabla'), 3);
     p.Mostrar();
 
   })
@@ -211,7 +195,6 @@ let cargarDatos = () => {
   })
 
 }
-
 
 document.addEventListener('DOMContentLoaded', function() {
   cargarDatos();

@@ -1,14 +1,3 @@
-let editarConsejo=(button)=>{
-  var x = document.getElementById("contenidoConsejo");
-  if (x.contentEditable == "true") {
-    x.contentEditable = "false";
-    button.innerHTML = "Edit Tip";
-  } else {
-    x.contentEditable = "true";
-    button.innerHTML = "Save!";
-  }
-}
-
 Paginador = function(divPaginador, tabla, tamPagina)
 {
     this.miDiv = divPaginador; //un DIV donde irán controles de paginación
@@ -194,9 +183,9 @@ let cargarDatos = () => {
       
     }
     //Agregamos la tabla al nodo en el html
-    document.getElementById('servicios').appendChild(table);
+    document.getElementById('listaTratamiento').appendChild(table);
 
-    var p = new Paginador(document.getElementById('servicios'),
+    var p = new Paginador(document.getElementById('listaTratamiento'),
     document.getElementById('mitabla'),6);
     p.Mostrar();
 
