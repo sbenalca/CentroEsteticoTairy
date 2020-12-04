@@ -75,7 +75,7 @@ Paginador = function(divPaginador, tabla, tamPagina)
 
 //Cargar los datos del json
 let cargarDatos = () => {
-  fetch('../recursos/tratamientos.json')
+  fetch('../../recursos/tratamientos.json')
   .then( (resultado) => {
      //Transforma en texto
 

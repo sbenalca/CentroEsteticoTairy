@@ -75,7 +75,7 @@ Paginador = function(divPaginador, tabla, tamPagina)
 
 let cargarDatos = () => {
 
-  fetch('../recursos/integrantes.json')
+  fetch('../../recursos/integrantes.json')
   .then( (resultado) => {
      //Transforma en texto
 
@@ -128,7 +128,7 @@ let cargarDatos = () => {
 
       let tdimg = document.createElement("td")
       let img = document.createElement("img")
-      img.setAttribute("src","../diseno/img/usuario.png");
+      img.setAttribute("src",persona.img);
       img.setAttribute("id","imgIntegrante")
 
       tdimg.appendChild(img);
@@ -159,7 +159,7 @@ let cargarDatos = () => {
       let tdimgAgr = document.createElement("td")
       tdimgAgr.setAttribute("id","imgAgr")
       let imgAgr = document.createElement("img")
-      imgAgr.setAttribute("src","../diseno/img/usuario.png");
+      imgAgr.setAttribute("src",persona.img);
       imgAgr.setAttribute("id","imgAgregado")
       tdimgAgr.appendChild(imgAgr);
       tr.appendChild(tdimgAgr);
