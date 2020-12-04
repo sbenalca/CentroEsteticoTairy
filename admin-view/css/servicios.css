@@ -6,7 +6,7 @@
 }
 body {
     overflow: hidden;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: var(--primary);
     
@@ -99,7 +99,7 @@ a:hover {
 
 }
 #tituloServicio{
-  color:#172b4d;
+  color:#7db63d;
   font-size: large;
   font: bold 90% sans-serif;
   margin-left: 10px;

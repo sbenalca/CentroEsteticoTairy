@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <title>Servicios</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,13 +12,14 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
   <body>
     <div class="d-flex fondoColor">
         <div id="sidebar-container" class="bg-primary">
             <div class="logo" >
                 <div class="row">
-                <img src="/diseno/img/logo3.PNG" alt="auto">
+                <img src="../recursos/logo3.PNG" class="col-sm-8">
                 <a href="#" class="d-block iconColor p-3"><i class="icon ion-md-menu mr-2 lead"></i></a>
                 </div>
             </div>
@@ -53,24 +53,22 @@
                 <a href="#" class="notificacion d-block p-3 "><ion-icon class="icon ion-md-help lead"></ion-icon></a>
                 <div class="dropdown col-sm-2">
                     <a class="notificacion nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="/diseno/img/usuario.png" class="img-fluid rounded-circle mr-2 img-usuario" alt="auto">
+                        <img src="../recursos/usuario.png" class="img-fluid rounded-circle mr-2 img-usuario">
                             Nombre Usuario
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Perfil</a>
                         <a class="dropdown-item" href="#">Cambiar Contraseña</a>
+                        <div class=></div>
                         <a class="dropdown-item" href="#">Cerrar Seccion</a>
                     </div>
                 </div>
             </nav>
-            <div id="logo1"><img class="logo1" src="/diseno/img/logo1.png" alt="auto" width="220" height="150"></div>
+            <div id="logo1"><img class="logo1" src="../recursos/logo1.PNG" width="220" height="150"></div>
             <div class="especificaciones">
-                <!--Servicio-->
-                <section id="servicio" class="servicios">
-                    <h6 id="tituloServicio">Servicios</h6>
-                    <!--encabezado-->
-                    <section id="encabezado" class="serEncabezado">
-                        <p id="tituloServicio">
+                <section class="servicios">
+                    <section class="serEncabezado">
+                        <p id="tituloServicio">Servicios
                             <button type="button" id="botonAdser">Administrar Servicios</button>
                             <button type="button" id="botonExdata">Export Data</button>
                             <button type="button" id="botonSeguir">+</button>
