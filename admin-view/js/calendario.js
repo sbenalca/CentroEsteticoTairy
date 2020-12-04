@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let titulo = $("#date")[0];
       titulo.textContent = "Fecha: " + fecha[0];
       $("#agendaModal").modal();
-      boton = document.getElementById("guardar");
+      boton = document.getElementById("agendar");
       let datosagendar = document.forms["datos-agendar"];
       if (fecha.length > 1) {
         datosagendar["inicio"].value = fecha[1].split("-")[0];
