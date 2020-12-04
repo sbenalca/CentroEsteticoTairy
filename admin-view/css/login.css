@@ -7,8 +7,8 @@ body {
     background: linear-gradient(-10deg, rgb(5,97,46) 50%, rgb(121,181,48) 50%);
     background-size: auto;
     background-repeat: no-repeat;
-    color: grey;
-    font-family: 'Noto Sans JP', sans-serif;
+    color: #707070;
+    font-family: 'Roboto', sans-serif;
 }
 
 .card-signin {
@@ -18,7 +18,7 @@ body {
 }
 
 .card{
-    background-color: rgb(243, 243, 243);
+    background-color: #fafafa;
 }
 
 .card-signin .card-title {
@@ -134,4 +134,8 @@ body {
 
 .custom-control, .message{
     font-size: small;
+}
+
+.container{
+    padding: 4.3rem 0;
 }

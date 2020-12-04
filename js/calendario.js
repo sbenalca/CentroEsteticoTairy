@@ -1,4 +1,39 @@
-$(document).ready(function() {
+
+document.addEventListener("DOMContentLoaded", function () {
+  var initialLocaleCode = "es";
+  var localeSelectorEl = document.getElementById("locale-selector");
+  var calendarEl = document.getElementById("calendar");
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    headerToolbar: {
+      left: "prev,next today",
+      center: "title",
+      right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
+    },
+    selectable: true,
+    locale: initialLocaleCode,
+    buttonIcons: false, // show the prev/next text
+    weekNumbers: true,
+    navLinks: true, // can click day/week names to navigate views
+    editable: true,
+    dayMaxEvents: true, // allow "more" link when too many events
+    events: "https://fullcalendar.io/demo-events.json?overload-day",
+    dateClick: function (date){
+        //alert('Has hecho click en :'+ date.dateStr);
+    },
+    select: function(info) {
+        console.log("seleccionado "+info.startStr+" a "+info.endStr);
+    },
+  });
+
+  calendar.render();
+});
+
+function evento(nuevo){
+    
+}
+
+/* $(document).ready(function() {
     
     var date = new Date();
    var yyyy = date.getFullYear().toString();
@@ -7,7 +42,7 @@ $(document).ready(function() {
     
     $('#calendar').fullCalendar({
         header: {
-             language: 'es',
+            language: 'es',
             left: 'prev,next today',
             center: 'title',
             right: 'month,agendaWeek,agendaDay',
@@ -46,7 +81,7 @@ $(document).ready(function() {
         events: [{
         title: 'All Day Event',
         description: 'Lorem ipsum 1...',
-        start: "2020"+'-'+'11'+'-01',
+        start: "2020"+'-'+'12'+'-01',
         color: '#3A87AD',
         textColor: '#ffffff',}
         ],
@@ -60,7 +95,7 @@ $(document).ready(function() {
             console.log(calEvent)
         },
     });
-    
+    //para mover eventos
     function edit(event){
         start = event.start.format('YYYY-MM-DD HH:mm:ss');
         if(event.end){
@@ -75,8 +110,6 @@ $(document).ready(function() {
         Event[0] = id;
         Event[1] = start;
         Event[2] = end;
-        
-        console.log("rs")
     } 
     
-});
+}); */
