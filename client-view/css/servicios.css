@@ -163,3 +163,29 @@ h2, #ver-mas{
 .dato{
     font-weight: bold;
 }
+
+/*IR ARRIBA*/
+
+.fa-chevron-up{
+    margin-top:16px;
+  }
+
+  .up {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#185f33;
+    color:#fafafa;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+
+  }
+  
+  .up:hover {
+    filter: brightness(120%);
+    color: #fafafa;
+  }

@@ -32,7 +32,7 @@ return resultado.text() ;
         servicio.appendChild(descripcion)
         servicio.appendChild(categoria)
 
-        if(cont>15){
+        if(cont>7){
             ocultos.appendChild(servicio)
         }else{
             primeros.appendChild(servicio)
@@ -52,19 +52,20 @@ return resultado.text() ;
 
 document.addEventListener('DOMContentLoaded', function() {
     cargarDatosJson();
-    addFilter();
+    byCategoria();
+    byNombre();
 })
 
-addFilter = () => {
+byCategoria = () => {
     let categorias = document.getElementsByClassName("categoria")
     for ( i=0;  i<categorias.length; i++){
         categorias[i].addEventListener('click', function (e){
-            filter(e)
+            filterbyCat(e)
         })
     }
 }
 
-filter = (clickeado) =>{
+filterbyCat = (clickeado) =>{
 
     id = clickeado.path[1].getAttribute("id").toUpperCase()
 
@@ -78,4 +79,26 @@ filter = (clickeado) =>{
             datos[i].style.display="";
         }
     }    
+}
+
+byNombre = () => {
+    input = document.getElementById("inputServicio")
+    input.addEventListener("keyup", function (){
+        filterByNom(input.value)
+    })
+}
+
+filterByNom = (valor) => {
+    console.log(valor)
+    dato = document.getElementsByClassName("servicio");
+
+    for (i = 0; i < dato.length; i++) {
+        compare = dato[i].getElementsByTagName("h2")[0].innerText
+        console.log(compare)
+        if (compare.indexOf(valor)<0){
+            dato[i].style.display="none";
+        }else {
+            dato[i].style.display="";
+        }
+    }  
 }
