@@ -1,0 +1,17 @@
+[
+    {
+        "nombre": "Promo 1",
+        "descripcion": "velit Lorem proident pariatur eiusmod exercitation qui aliquip laborum fugiat do ea consectetur sint labore quis laborum non Lorem elit ex consequat velit eu ea ex do veniam non occaecat",
+        "img": "../recursos/servicios1.jpg"
+    },
+    {
+        "nombre": "Promo 2",
+        "descripcion": "velit Lorem proident pariatur eiusmod exercitation qui aliquip laborum fugiat do ea consectetur sint labore quis laborum non Lorem elit ex consequat velit eu ea ex do veniam non occaecat",
+        "img": "../recursos/servicios2.jpg"
+    },
+    {
+        "nombre": "Promo 2",
+        "descripcion": "velit Lorem proident pariatur eiusmod exercitation qui aliquip laborum fugiat do ea consectetur sint labore quis laborum non Lorem elit ex consequat velit eu ea ex do veniam non occaecat",
+        "img": "../recursos/servicios4.png"
+    }
+  ]

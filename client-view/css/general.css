@@ -4,9 +4,15 @@
 body{
     font-family: 'Roboto', sans-serif;
     color: #707070;
+    background-color: #fafafa;
 }
 
-#nosotros, #valores, #equipo, #certificados, #cuentanos{
+#navbarToggler{
+    display: flex !important;
+    justify-content: left !important;
+}
+
+#servicios, #comentarios, #mapa, #nosotros, #valores, #equipo, #certificados, #cuentanos, #noticias, #promos {
     padding: 3rem;
     text-align: center;
     background-color: #fafafa;
@@ -40,7 +46,7 @@ hr{
 
 #redes ul li{
     list-style: none;
-    padding-bottom: 3rem;
+    padding-bottom: 2.75rem;
 }
 
 #redes ul li i{
@@ -49,7 +55,7 @@ hr{
 }
 
 #redes ul{
-    padding-left: 2rem;
+    padding-left: 1.5rem;
 }
 
 /*Menu*/
@@ -99,6 +105,7 @@ h2{
     grid-template-columns: 30% 70%;
 }
 
+
 .img-footer{
     margin-top: 5%;
     max-width: 100%;
@@ -117,4 +124,30 @@ h2{
 
 .dato{
     font-weight: bold;
+}
+
+/* Flotante Whatsapp */
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#185f33;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+  font-size:30px;
+    box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+.float:hover {
+    text-decoration: none;
+    color: #fafafa;
+  background-color:#7db63d;
+}
+
+.my-float{
+    margin-top:16px;
 }
