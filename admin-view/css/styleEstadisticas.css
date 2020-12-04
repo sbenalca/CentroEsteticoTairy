@@ -9,7 +9,6 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 300;
     height: auto;
-     
 }
 .bg-light {
   background-color: #7db63d !important;
@@ -34,6 +33,7 @@ a:hover {
   background-color: var(--light) !important;
 }
 #sidebar-container {
+  width: 220px;
   min-height: 100vh;
 }
 #sidebar-container .logo {
@@ -56,7 +56,7 @@ a:hover {
     height: 40%;
     background-color: #7db63d;
     z-index: -1;
-    background-image: url('diseño\img\logo1.PNG');
+    background-image: url('diseno\img\logo1.PNG');
 }
 .w-100{
   overflow-y: auto;
@@ -131,7 +131,8 @@ section.li-3cA{
   height:35px;
 }
 
-.especificaciones {   
+.especificaciones {
+    padding-top: 80px;   
     margin: 25px 50px 25px 50px;
     margin: 1.5rem!important;
 }
@@ -349,3 +350,7 @@ table{
 input[type='radio'] { 
  -webkit-appearance: none; 
 } 
+#estatico{
+  position: absolute;
+  width: 90%;
+}

@@ -1,13 +1,13 @@
 .root {
-    --primary: #7db63d !important;
+    --primary: rgb(121,181,48) !important;
     --light: #ffffff;
     --grey: #efefef;
-    --green: #7db63d;
+ 
 }
 body {
     overflow: hidden;
-    font-family: "Source Sans Pro", sans-serif;
-    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300px;
     color: var(--primary);
     
 }
@@ -33,11 +33,15 @@ a:hover {
 .bg-primary {
   background-color: var(--light) !important;
 }
+.tamanio{
+  font-size: 0px;
+}
 #sidebar-container {
+  width: 220px;
   min-height: 100vh;
 }
 #sidebar-container .logo {
-  padding: 0.875rem 1.25rem;
+  padding: 0.875rem 1rem;
 }
 .btn-search {
   right: 5px;
@@ -56,5 +60,12 @@ a:hover {
     height: 40%;
     background-color: #7db63d;
     z-index: -1;
-    background-image: url('diseño\img\logo1.PNG');
+    background-image: url('diseno\img\logo1.PNG');
+}
+#estatico{
+  position: absolute;
+  z-index: 100;
+}
+#calendar{
+  padding: 80px;
 }
