@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <title>Agenda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css"/>
@@ -14,6 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Stepper CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bs-stepper/dist/css/bs-stepper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/bs-stepper/dist/css/bs-stepper.min.css">
+
     </head>
   <body>
     <div class="d-flex fondoColor">
@@ -92,32 +98,73 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form name="datos-agendar">
-                        <div class="form-group">
-                            <label for="nombre" class="col-form-label">Nombre de Persona</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre"/>
+                    <div  id="process" class="bs-stepper vertical">
+                        <div class="bs-stepper-header" role="tablist">
+                            <div class="step" data-target="#logins-part">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="logins-part" id="logins-part-trigger">
+                                <span class="bs-stepper-circle">1</span>
+                                <span class="bs-stepper-label">Datos de la cita</span>
+                                </button>
+                            </div>
+                            <div class="line"></div>
+                            <div class="step" data-target="#information-part">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                                <span class="bs-stepper-circle">2</span>
+                                <span class="bs-stepper-label">Confirmar hora</span>
+                                </button>
+                            </div>
+                            <div class="line"></div>
+                            <div class="step" data-target="#finish-part">
+                                <button type="button" class="step-trigger" role="tab" aria-controls="finish-part" id="finish-part-trigger">
+                                <span class="bs-stepper-circle">3</span>
+                                <span class="bs-stepper-label">Finalizar</span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Servicio</label>
-                            <textarea class="form-control" id="message-text" name="servicio"></textarea>
+                        <div class="bs-stepper-content">
+                            <form name="datos-agendar">
+                                <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
+                                    <div>
+                                        <div class="form-group">
+                                            <label for="nombre" class="col-form-label">Nombre de Persona</label>
+                                            <input type="text" class="form-control" id="nombre" name="nombre"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="message-text" class="col-form-label">Servicio</label>
+                                            <textarea class="form-control" id="message-text" name="servicio"></textarea>
+                                        </div>
+                                        <button class="waves-effect waves-dark btn btn-sm btn-success m-0 mt-4" type="button">Siguiente</button>
+                                    </div>
+                                </div>
+                                <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+                                    <div>
+                                        <label for="inicio" class="col-form-label">Hora de inicio</label>
+                                        <input type="time" id="inicio" name="inicio" min="08:00" max="18:00" required>
+                                        <label for="fin" class="col-form-label">Hora de fin</label>
+                                        <input type="time" id="fin" name="fin" min="08:00" max="18:00" required>
+                                        <button class="waves-effect waves-dark btn btn-sm btn-secondary m-0 mt-4" type="button">Atras</button>
+                                        <button class="waves-effect waves-dark btn btn-sm btn-success m-0 mt-4" type="button">Agendar</button>
+                                    </div>
+                                </div>
+                                <div id="finish-part" class="content" role="tabpanel" aria-labelledby="finish-part-trigger">
+                                    <p>Cita agendada con exito!!</p>
+                                </div>
+                        </form>
                         </div>
-                        <div>
-                            <label for="inicio" class="col-form-label">Hora de inicio</label>
-                            <input type="time" id="inicio" name="inicio" min="08:00" max="18:00" required>
-                            <label for="fin" class="col-form-label">Hora de fin</label>
-                            <input type="time" id="fin" name="fin" min="08:00" max="18:00" required>
-                        </div>
-                    </form>
+                      </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">
                         Cerrar
                     </button>
-                    <button type="button" class="btn btn-primary" id="guardar">Guardar Datos</button>
                 </div>
             </div>
         </div>
     </div>
+    
+    <script src="../node_modules/bs-stepper/dist/js/bs-stepper.min.js"></script>
+    <script src="./js/stepper.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -125,11 +172,15 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
+    
     <!--Calendario-->
     <script src="js/calendario.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.min.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/main.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.4.0/locales-all.js"></script>
+
+    <!-- Stepper JavaScript - minified -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bs-stepper/dist/js/bs-stepper.min.js"></script>
 
     <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
