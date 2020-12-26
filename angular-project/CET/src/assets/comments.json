@@ -1,0 +1,77 @@
+[
+  {
+    "cliente": "Jeannine Maldonado",
+    "comentario": "velit Lorem proident pariatur eiusmod exercitation qui aliquip laborum fugiat do ea consectetur sint labore quis laborum non Lorem elit ex consequat velit eu ea ex do veniam non occaecat",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Rollins Cunningham",
+    "comentario": "dolor cupidatat elit reprehenderit est nostrud consectetur esse dolore exercitation nostrud exercitation veniam esse id est ad fugiat nisi anim nostrud id in laboris occaecat incididunt excepteur consectetur in sint",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Eaton Knox",
+    "comentario": "sit esse eiusmod incididunt nisi eiusmod laborum exercitation irure ut aliqua laborum non anim reprehenderit exercitation id duis elit nisi nulla enim exercitation sit qui eu consequat aliquip dolore enim",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Debora Garrison",
+    "comentario": "ex enim tempor sunt incididunt ut esse ex amet officia voluptate in excepteur pariatur ut irure irure ea nostrud nisi in occaecat irure in ea elit eu eu labore ullamco",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Tia Hyde",
+    "comentario": "eiusmod adipisicing ullamco consectetur duis consequat minim voluptate ad cillum consequat sint incididunt deserunt mollit ullamco ut aliqua ullamco mollit occaecat irure et sint cupidatat consectetur aliqua sunt esse consequat",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Rebecca Battle",
+    "comentario": "nostrud ut eiusmod cillum anim reprehenderit non amet proident ullamco cupidatat ad exercitation qui anim consectetur excepteur consectetur excepteur enim esse ea elit aliquip non velit reprehenderit qui excepteur mollit",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Franklin Dillon",
+    "comentario": "veniam ipsum excepteur voluptate dolore elit pariatur deserunt proident sunt proident eiusmod qui Lorem sunt amet veniam ad cupidatat dolor incididunt ea et culpa excepteur do consequat pariatur ea minim",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Rodriquez Mccall",
+    "comentario": "dolore labore consequat nisi ea velit laborum est ipsum duis ad quis consequat ipsum ad minim esse reprehenderit nisi cillum proident est qui ut voluptate irure quis esse sunt nostrud",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Price Sanders",
+    "comentario": "laboris et non est Lorem eiusmod tempor reprehenderit Lorem id ullamco reprehenderit laboris esse irure elit voluptate aliqua ad aute ullamco non elit quis laborum deserunt commodo minim incididunt incididunt",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Reeves Bailey",
+    "comentario": "ullamco qui velit ad quis velit aliqua laboris culpa aliqua amet irure ex minim ea laborum nulla laborum ad irure sit incididunt ex exercitation fugiat enim ipsum aute non consectetur",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Jocelyn Figueroa",
+    "comentario": "esse tempor ea nostrud incididunt ullamco pariatur reprehenderit incididunt elit pariatur exercitation dolor incididunt fugiat id nostrud commodo ad dolore sit veniam commodo dolore minim reprehenderit officia consequat laborum commodo",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Elsie Rosa",
+    "comentario": "commodo cillum et non excepteur voluptate pariatur proident sit est laborum ipsum eu occaecat irure aute minim cupidatat fugiat aliquip officia nisi adipisicing fugiat mollit Lorem cupidatat irure sint mollit",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Stephens Duran",
+    "comentario": "et nostrud nostrud ea deserunt deserunt do est voluptate quis labore do amet eu dolor et excepteur do tempor aute in officia exercitation velit pariatur velit duis ea officia elit",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Sasha Booker",
+    "comentario": "incididunt eiusmod quis ut sit incididunt aute in eu cupidatat nulla consectetur enim pariatur nulla elit exercitation in ut aute occaecat cupidatat incididunt exercitation voluptate excepteur elit occaecat fugiat pariatur",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "cliente": "Tessa Koch",
+    "comentario": "nisi ex nulla quis minim voluptate laboris Lorem cillum ut dolore ut officia adipisicing veniam dolore cupidatat sint occaecat irure amet pariatur culpa anim nisi incididunt dolore dolor sunt ea",
+    "img": "../recursos/usuario.png"
+  }
+]
