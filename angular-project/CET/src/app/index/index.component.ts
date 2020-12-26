@@ -10,7 +10,7 @@ export class IndexComponent implements OnInit {
 
   
   constructor() { 
-    fetch("url de comentarios")
+    fetch("http://localhost:3000/comments")
     .then(res => res.json())
     .then(obj => (this.comentarios=obj))
     .catch(err => console.log(err));
