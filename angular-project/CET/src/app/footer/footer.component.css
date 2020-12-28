@@ -1,0 +1,41 @@
+/*FOOTER*/
+
+footer{
+    background-color: #7db63d;
+    padding: 2% 15%;
+    color: white;
+}
+
+h2{
+    margin-top: 5%;
+    font-family: 'Beyond The Mountains', sans-serif;
+    margin-bottom: 3%;
+    color: #185f33 ;
+    font-size: 2vw;
+}
+
+.contact-grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+
+.img-footer{
+    margin-top: 5%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.contact-info{
+    font-style: italic;
+    font-size: 1.25vw;
+}
+
+.info{
+    padding-top: 3%;
+    margin-left: 20%;
+}
+
+.dato{
+    font-weight: bold;
+}

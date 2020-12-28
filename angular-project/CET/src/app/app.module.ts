@@ -8,16 +8,20 @@ import { FooterComponent } from './footer/footer.component';
 import { IndexComponent } from './index/index.component';
 import { EquipoComponent } from './equipo/equipo.component';
 import { ServiciosComponent } from './servicios/servicios.component';
+import { ContactoComponent } from './contacto/contacto.component';
+import { PromocionesComponent } from './promociones/promociones.component';
 
 @NgModule({
-  declarations: [
+  declarations: [		
     AppComponent,
     NavbarComponent,
     FooterComponent,
     IndexComponent,
     EquipoComponent,
-    ServiciosComponent
-  ],
+    ServiciosComponent,
+      ContactoComponent,
+      PromocionesComponent
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule

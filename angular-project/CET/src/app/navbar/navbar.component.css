@@ -1,0 +1,48 @@
+/*Redes*/
+
+#redes{
+    position: absolute;
+    top: 1rem;
+    z-index: 999;
+}
+
+#redes ul li{
+    list-style: none;
+    padding-bottom: 1.05rem;
+}
+
+#redes ul li i{
+    color: #7db63d;
+    font-size: large;
+}
+
+#redes ul{
+    padding-left: 1.5rem;
+}
+
+
+/*Menu*/
+#menu{
+    margin: 0rem 10% 0rem;
+}
+
+.opcion{
+    color: #185f33;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 3.5rem;
+}
+
+.logo{
+    max-width: 100%;
+    min-width: 15%;
+}
+
+@media screen and (max-width: 1000px){
+    #redes, .portada, .img-descripcion{
+        display: none;
+    }
+    .descripcion{
+        padding: 0 10%;
+    }
+}

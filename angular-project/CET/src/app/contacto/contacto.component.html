@@ -1,0 +1,68 @@
+<app-navbar></app-navbar>
+
+<section id="landing-contacto">
+  <div class="row" id="bienvenida">
+      <div class="portada col-lg-6">
+          <img class="logo" src="../assets/logoiconwhite.svg" alt="logo">
+      </div>
+      <div class="info-bienvenida col-lg-6">
+          <p id="slogan1">Nuestra razon de ser esta basada en la idea de brindar</p>
+          <p id="slogan2">Salud, belleza y bienestar</p>
+      </div>
+  </div>
+</section>
+
+<section id="cuentanos">
+  <h1>Cuéntanos tu experiencia</h1>
+  <hr>
+  <div id="contactanos" class="row row-cols-lg-2 row-cols-1">
+      
+
+      <img src="../assets/servicios1.jpg" alt="imagen" class="col-lg-5">
+      <div  class="col-lg-7">
+          <div id="formLayout"> 
+              <form>
+                  <legend>Déjanos un mensaje</legend>
+
+                  <div class="form-group row">
+                      <label for="contact-nombre">Nombre: *</label>
+                      <input type="text" class="form-control" id="contact-nombre" placeholder="Escribe tu nombre completo aquí.">
+                  </div>
+
+                  <div class="form-group row">
+                      <label for="contact-nacimiento">Fecha de nacimiento: *</label>
+                      <input type="date" class="form-control" id="contact-nacimiento" name="nacimiento" value="2020-12-03" min="1950-12-03" max="2002-12-03">
+                  </div>
+                  
+                  <div class="form-group row">
+                      <label for="contact-ciudad">Ciudad: *</label>
+                      <select id="contact-ciudad" class="form-control">
+                        <option selected>Selecciona una ciudad...</option>
+                      </select>
+                  </div>
+
+
+                  <div class="form-group row">
+                      <label for="contact-mail">Correo Electrónico: *</label>
+                      <input type="email" class="form-control" id="contact-mail" placeholder="ejemplo@gmail.com" >
+                  </div>
+
+                  <div class="form-group row">
+                      <label for="contact-detalle">Mensaje: *</label>
+                      <textarea class="form-control" id="contact-detalle" placeholder="Escribe tu mensaje aquí." rows="3"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+          </div>
+      </div>
+
+  </div>
+
+</section>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com/send?phone=593998446551" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+</a>
+
+<app-footer></app-footer>
