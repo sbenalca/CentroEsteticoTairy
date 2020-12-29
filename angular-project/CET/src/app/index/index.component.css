@@ -2,7 +2,8 @@
 
 .titulo{
     color: #185f33;
-    font-size: 6vw;
+    font-size: 6vw !important;
+    margin-top: 10%;
 }
 
 #bienvenida{

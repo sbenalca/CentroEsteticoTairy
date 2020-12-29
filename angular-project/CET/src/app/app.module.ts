@@ -10,6 +10,7 @@ import { EquipoComponent } from './equipo/equipo.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { PromocionesComponent } from './promociones/promociones.component';
+import { SloganComponent } from './slogan/slogan.component';
 
 @NgModule({
   declarations: [		
@@ -20,7 +21,8 @@ import { PromocionesComponent } from './promociones/promociones.component';
     EquipoComponent,
     ServiciosComponent,
       ContactoComponent,
-      PromocionesComponent
+      PromocionesComponent,
+      SloganComponent
    ],
   imports: [
     BrowserModule,

@@ -1,0 +1,34 @@
+
+/*BIENVENIDA*/
+
+#bienvenida{
+    background-image: linear-gradient(to top right, #7db63d ,#dcebcc, #ffffff);
+}
+
+.portada{
+    text-align: center;
+}
+
+.portada > .logo {
+    max-width: 40%;
+    min-width: 40%;
+    margin: 5%;
+}
+
+#slogan1{
+    color: #707070;
+    margin-top: 2vw;
+    margin-bottom: 0%;
+}
+
+#slogan2{
+    color: #185f33;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.info-bienvenida{
+    text-align: center;
+    padding: 7rem 3rem 3rem;
+    font-style: italic;
+}

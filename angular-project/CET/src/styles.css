@@ -4,7 +4,7 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-    color: #707070;
+    color: #707070 !important;
     background-color: #fafafa;
 }
 
@@ -14,7 +14,7 @@ body{
 }
 
 #servicios, #comentarios, #mapa, #nosotros, #valores, #equipo, #certificados, #cuentanos, #noticias, #promos {
-    padding: 3rem;
+    padding: 7rem 3rem;
     text-align: center;
     background-color: #fafafa;
 }
@@ -22,7 +22,7 @@ body{
 h1{
     color: #7db63d;
     font-family: 'Beyond The Mountains', sans-serif;
-    font-size: 3.5vw;              
+    font-size: 3vw !important;              
 }
 
 h3{
@@ -35,9 +35,14 @@ hr{
     background-color: #185f33;
 }
 
-
-
-
+@media screen and (max-width: 1000px){
+    #redes, .portada, .img-descripcion{
+        display: none;
+    }
+    .descripcion{
+        padding: 0 10%;
+    }
+}
 
 /* Flotante Whatsapp */
 
