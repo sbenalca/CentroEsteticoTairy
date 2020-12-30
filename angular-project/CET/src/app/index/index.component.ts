@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import * as introJs from 'intro.js/intro.js';
 const introJs = require("intro.js");
 
 
@@ -8,17 +7,15 @@ const introJs = require("intro.js");
   templateUrl: './index.component.html',
   styleUrls: ['./index.component.css']
 })
+
 export class IndexComponent implements OnInit {
-  //comentarios=[];
+  comentarios;
+  active;
   introJS = introJs();
 
-  
   constructor() { 
-    /*fetch("http://localhost:3000/comments")
-    .then(res => res.json())
-    .then(obj => (this.comentarios=obj))
-    .catch(err => console.log(err));
-  */
+    this.comentarios= require("src/assets/comments.json");
+    this.active = this.comentarios.shift();
     this.introJS.setOptions({
       steps: [
         { 
@@ -46,6 +43,6 @@ export class IndexComponent implements OnInit {
 
   ngOnInit(): void {
     this.introJS.start();
-  }
+  }  
 
 }

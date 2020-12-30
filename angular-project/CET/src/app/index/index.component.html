@@ -32,6 +32,24 @@
     <hr>
     <div id="comentarios-carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause:hover>
       <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="cliente">
+                <img class="comentarios-image" src="../../assets/usuario.png" alt="cliente">
+                <div class="comentarios-text">
+                    <p>{{active.comentario}}</p>
+                    <p>{{active.cliente}}</p>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" *ngFor="let j of comentarios">
+            <div class="cliente">
+                <img class="comentarios-image" src="../../assets/usuario.png" alt="cliente">
+                <div class="comentarios-text">
+                    <p>{{j.comentario}}</p>
+                    <p>{{j.cliente}}</p>
+                </div>
+            </div>
+          </div>
       </div>
       <a class="carousel-control-prev" href="#comentarios-carousel" role="button" data-slide="prev">
         <i class="icon-control fas fa-chevron-left"></i>
@@ -53,4 +71,3 @@
 
 <app-whatsapp></app-whatsapp>
 <app-footer></app-footer>
-<script src="./js/add_comments.js"></script>

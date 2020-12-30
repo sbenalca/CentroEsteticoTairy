@@ -76,6 +76,12 @@
     <h1>El Equipo</h1>
     <hr>
     <div class="equipo-grid row">
+        <div class="integrante col-lg-5" *ngFor=" let j of integrantes">
+            <img src="../../assets/usuario.png" alt="integrante">
+            <h2>{{j.integrante}}</h2>
+            <p>{{j.cargo}}</p>
+            <p>{{j.informacion}}</p>
+        </div>
     </div>
 
 </section>
@@ -93,4 +99,3 @@
 
 <app-whatsapp></app-whatsapp>
 <app-footer></app-footer>
-<script src="./js/add_integrantes.js"></script>

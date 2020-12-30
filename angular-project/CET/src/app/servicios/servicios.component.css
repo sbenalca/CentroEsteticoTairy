@@ -67,6 +67,11 @@
 }
 
 
+.filtrar:nth-child(n+9){
+    display: none;
+}
+
+
 /*IR ARRIBA*/
 
 .fa-chevron-up{

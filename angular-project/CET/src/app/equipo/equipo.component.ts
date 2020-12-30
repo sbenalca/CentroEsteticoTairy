@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./equipo.component.css']
 })
 export class EquipoComponent implements OnInit {
+  integrantes;
 
-  constructor() { }
+  constructor() { 
+    this.integrantes=require("src/assets/integrantes.json");
+  }
 
   ngOnInit(): void {
   }
