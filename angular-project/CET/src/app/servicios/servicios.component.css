@@ -66,8 +66,11 @@
     font-size: 2vw;
 }
 
-
 .filtrar:nth-child(n+9){
+    display: none;
+}
+
+.ocultar{
     display: none;
 }
 
