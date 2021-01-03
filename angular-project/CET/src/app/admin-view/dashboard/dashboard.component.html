@@ -1,0 +1,82 @@
+<div class="d-flex fondoColor">
+  <div id="sidebar-container" class="bg-primary">
+      <div class="logo">
+          <div class="row">
+              <img src="../../../assets/logo3.PNG" class="col-sm-8" alt="">
+              <button class="btn d-block iconColor p-3" (click)="myClick()">
+                <ion-icon class="icon ion-md-menu mr-2 lead" name="menu"></ion-icon>
+                <i class="icon ion-md-menu mr-2 lead"></i></button>
+          </div>
+      </div>
+      <div class="menu">
+          <a href="#especificacion" class="d-block iconColor p-3">
+            <ion-icon class="icon ion-md-home mr-2 lead" name="home"></ion-icon>
+              <!-- <ion-icon class="icon ion-md-home mr-2 lead"></ion-icon> -->Inicio
+          </a>
+          <a href="#" class="d-block iconColor p-3">
+            <ion-icon class="icon ion-md-mail-open mr-2 lead" name="mail-open"></ion-icon>
+              <!-- <ion-icon class="icon ion-md-mail-open mr-2 lead"></ion-icon> -->Bandeja de Entrada
+          </a>
+          <a href="./servicios.html" class="d-block iconColor p-3">
+            <ion-icon name="cube" class="icon ion-md-cube mr-2 lead"></ion-icon>
+            <!-- <ion-icon class="icon ion-md-cube mr-2 lead"></ion-icon> -->Servicios
+          </a>
+          <a href="#calendar" class="d-block iconColor p-3">
+            <ion-icon class="icon ion-md-calendar mr-2 lead" name="calendar"></ion-icon>
+            <!-- <ion-icon class="icon ion-md-calendar mr-2 lead"></ion-icon> -->Agenda
+          </a>
+          <a href="" class="d-block iconColor p-3">
+            <ion-icon class="icon ion-md-contact mr-2 lead" name="people"></ion-icon>
+            <!-- <ion-icon class="icon ion-md-contact mr-2 lead"></ion-icon> -->Usuarios
+          </a>
+          <a href="#" class="d-block iconColor p-3">
+            <ion-icon class="icon ion-md-construct mr-2 lead" name="construct"></ion-icon>
+              <!-- <ion-icon class="icon ion-md-construct mr-2 lead"></ion-icon> -->Configuración
+          </a>
+
+      </div>
+  </div>
+
+  <!-- Navbar -->
+  <div class="w-100">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" id="estatico">
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse row" id="navbarSupportedContent">
+              <div class="col-sm-10">
+                  <form class="form-inline my-2 d-inline-block position-relative">
+                      <input class="btn-redondo form-control mr-sm-2" type="search" placeholder="Search"
+                          aria-label="Buscar">
+                      <button class="btn position-absolute btn-search" type="submit">
+                        <ion-icon class="icon ion-md-search lead" name="search"></ion-icon>
+                          <!-- <ion-icon class="icon ion-md-search lead"></ion-icon> -->
+                      </button>
+                  </form>
+              </div>
+          </div>
+          <a href="#" class="notificacion d-block p-3 ">
+              <!-- <ion-icon class="icon ion-md-notifications-outline lead"></ion-icon> -->
+              <ion-icon class="icon ion-md-notifications-outline lead" name="notifications"></ion-icon>
+          </a>
+          <a href="#" class="notificacion d-block p-3 ">
+            <ion-icon class="icon ion-md-help lead" name="help-circle"></ion-icon>
+              <!-- <ion-icon class="icon ion-md-help lead"></ion-icon> -->
+          </a>
+          <div class="dropdown col-sm-2">
+              <a class="notificacion nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="../../../assets/usuario.png" class="img-fluid rounded-circle mr-2 img-usuario" alt="">
+                  Nombre Usuario
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Perfil</a>
+                  <a class="dropdown-item" href="#">Cambiar Contraseña</a>
+                  <a class="dropdown-item" href="#">Cerrar Seccion</a>
+              </div>
+          </div>
+      </nav>
+  </div>
+</div>

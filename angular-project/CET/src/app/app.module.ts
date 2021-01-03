@@ -12,23 +12,27 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { PromocionesComponent } from './promociones/promociones.component';
 import { SloganComponent } from './slogan/slogan.component';
 import { WhatsappComponent } from './whatsapp/whatsapp.component';
+import { AdminViewModule} from './admin-view/admin-view.module';
+import { IonicModule } from '@ionic/angular';
 
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
     IndexComponent,
     EquipoComponent,
     ServiciosComponent,
-      ContactoComponent,
-      PromocionesComponent,
-      SloganComponent,
-      WhatsappComponent
+    ContactoComponent,
+    PromocionesComponent,
+    SloganComponent,
+    WhatsappComponent
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminViewModule,
+    IonicModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
