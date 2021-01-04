@@ -6,6 +6,8 @@ import { EquipoComponent } from './equipo/equipo.component';
 import { PromocionesComponent } from './promociones/promociones.component';
 import { ServiciosComponent } from './servicios/servicios.component';
 import { DashboardComponent } from './admin-view/dashboard/dashboard.component';
+import { EstadisticaComponent } from './admin-view/estadistica/estadistica.component';
+import { CalendarioComponent } from './admin-view/calendario/calendario.component';
 
 const routes: Routes = [
   { path: "", component: IndexComponent },
@@ -13,7 +15,9 @@ const routes: Routes = [
   { path: "equipo", component: EquipoComponent },
   { path: "promociones", component: PromocionesComponent },
   { path: "servicios", component: ServiciosComponent },
-  { path: "dashboard", component: DashboardComponent}
+  { path: "dashboard", component: DashboardComponent },
+  { path: "estadistica", component: EstadisticaComponent },
+  { path: "calendario", component: CalendarioComponent }
 ];
 
 @NgModule({
