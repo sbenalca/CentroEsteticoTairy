@@ -14,7 +14,12 @@ import { SloganComponent } from './slogan/slogan.component';
 import { WhatsappComponent } from './whatsapp/whatsapp.component';
 import { AdminViewModule} from './admin-view/admin-view.module';
 import { IonicModule } from '@ionic/angular';
+import { FullCalendarModule } from '@fullcalendar/angular'; // the main connector. must go first
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin
 
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin
+]);
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +37,8 @@ import { IonicModule } from '@ionic/angular';
     BrowserModule,
     AppRoutingModule,
     AdminViewModule,
-    IonicModule.forRoot()
+    IonicModule.forRoot(),
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

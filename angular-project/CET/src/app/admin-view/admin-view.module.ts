@@ -8,9 +8,18 @@ import { AppRoutingModule } from '../app-routing.module';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarAdminComponent } from './navbar-admin/navbar-admin.component';
 import { CalendarioComponent } from './calendario/calendario.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
+import dayGridPlugin from '@fullcalendar/daygrid';
+import timeGridPlugin from '@fullcalendar/timegrid';
+import listPlugin from '@fullcalendar/list';
+import interactionPlugin from '@fullcalendar/interaction';
 
-
-
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin,
+  interactionPlugin,
+  timeGridPlugin,
+  listPlugin
+]);
 
 @NgModule({
   declarations: [DashboardComponent, EstadisticaComponent, SidebarComponent, NavbarAdminComponent, CalendarioComponent],
@@ -18,7 +27,8 @@ import { CalendarioComponent } from './calendario/calendario.component';
     BrowserModule,
     CommonModule,
     IonicModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FullCalendarModule
   ]
 })
 export class AdminViewModule { }
