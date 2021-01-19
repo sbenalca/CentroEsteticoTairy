@@ -1,0 +1,38 @@
+[
+  {
+    "integrante": "Benjamin Salas",
+    "cargo": "mollit commodo amet aliquip consequat",
+    "informacion": "dolor est sint commodo enim fugiat consequat excepteur occaecat do",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "integrante": "Alisha Schwartz",
+    "cargo": "do officia id veniam adipisicing",
+    "informacion": "dolor sunt proident et laborum deserunt ut velit ex amet",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "integrante": "Nadia Beard",
+    "cargo": "tempor nostrud et laborum officia",
+    "informacion": "incididunt dolor officia dolore sint nostrud commodo cillum do et",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "integrante": "Woodard Snyder",
+    "cargo": "minim nisi magna cillum cillum",
+    "informacion": "fugiat elit esse esse in reprehenderit culpa laboris proident quis",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "integrante": "Horne Yang",
+    "cargo": "elit aliqua ipsum amet magna",
+    "informacion": "adipisicing laboris amet reprehenderit anim excepteur qui ipsum aute proident",
+    "img": "../recursos/usuario.png"
+  },
+  {
+    "integrante": "Garcia Cochran",
+    "cargo": "veniam consequat esse commodo ut",
+    "informacion": "commodo est aliqua non sint nisi adipisicing et magna aliqua",
+    "img": "../recursos/usuario.png"
+  }
+]
