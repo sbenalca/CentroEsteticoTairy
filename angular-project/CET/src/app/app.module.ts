@@ -12,6 +12,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { PromocionesComponent } from './promociones/promociones.component';
 import { SloganComponent } from './slogan/slogan.component';
 import { WhatsappComponent } from './whatsapp/whatsapp.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [		
@@ -24,7 +25,8 @@ import { WhatsappComponent } from './whatsapp/whatsapp.component';
       ContactoComponent,
       PromocionesComponent,
       SloganComponent,
-      WhatsappComponent
+      WhatsappComponent,
+      LoginComponent
    ],
   imports: [
     BrowserModule,
