@@ -1,0 +1,6 @@
+npm install --save-dev @angular-devkit/build-angular
+npm install -g @angular/cli
+npm install @fullcalendar/interaction --save
+npm install --save @fullcalendar/angular @fullcalendar/daygrid
+npm install @fullcalendar/list --save
+npm install @fullcalendar/timegrid --save

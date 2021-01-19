@@ -13,9 +13,16 @@ import { PromocionesComponent } from './promociones/promociones.component';
 import { SloganComponent } from './slogan/slogan.component';
 import { WhatsappComponent } from './whatsapp/whatsapp.component';
 import { LoginComponent } from './login/login.component';
+import { AdminViewModule} from './admin-view/admin-view.module';
+import { IonicModule } from '@ionic/angular';
+import { FullCalendarModule } from '@fullcalendar/angular'; // the main connector. must go first
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin
 
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin
+]);
 @NgModule({
-  declarations: [		
+  declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
@@ -30,7 +37,10 @@ import { LoginComponent } from './login/login.component';
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminViewModule,
+    IonicModule.forRoot(),
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

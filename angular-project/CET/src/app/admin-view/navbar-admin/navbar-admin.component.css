@@ -1,0 +1,114 @@
+.root {
+  --primary: #7db63d !important;
+  --light: #ffffff;
+  --grey: #efefef;
+  --verde: #f5f7f2;
+  --lightClaro: #fafafa;
+  --verdeOscuro: #185f33;
+  --gris: #707070;
+  --fc-border-color: rgb(255, 0, 0);
+  --fc-daygrid-event-dot-width: 5px;
+}
+body {
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300px;
+}
+.bg-light {
+  background-color: #7db63d !important;
+}
+.notificacion {
+  color: #ffffff !important;
+}
+.notificacion:hover {
+  color: #000000 !important;
+}
+a:hover {
+  text-decoration: none;
+  color: #7db63d !important;
+}
+.iconColor {
+  color: #7db63d !important;
+}
+.iconColor:hover {
+  color: #000000 !important;
+}
+.bg-primary {
+  background-color: var(--light) !important;
+}
+.tamanio {
+  font-size: 0px;
+}
+#sidebar-container {
+  width: 250px;
+  min-height: 100vh;
+}
+#sidebar-container .logo {
+  padding: 0.875rem 1rem;
+}
+.btn-search {
+  right: 5px;
+}
+.btn-redondo {
+  border-radius: 30px;
+}
+.img-usuario {
+  max-width: 35px;
+}
+.fondoColor {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40%;
+  background-color: #7db63d;
+  z-index: -1;
+}
+#estatico {
+  position: absolute;
+  z-index: 100;
+  width: 80%;
+}
+#calendar {
+  padding-top: 80px;
+  background-color: #ffffff;
+  text-decoration-color: #7db63d !important;
+  font-family: "Times New Roman", Times, serif;
+}
+.w-100 {
+  overflow-y: auto;
+  overflow-x: auto;
+  height: 100vh;
+  padding-bottom: 10rem;
+}
+#calendar > * {
+  width: 100%;
+}
+.fc-col-header-cell-cushion,
+.fc-daygrid-more-link {
+  color: #7db63d;
+}
+.fc-col-header-cell-cushion:hover,
+.fc-daygrid-more-link:hover {
+  color: #030303 !important;
+}
+.fc-daygrid-day-number {
+  color: #7db63d !important;
+}
+.fc-daygrid-day-number:hover {
+  color: #000000 !important;
+}
+.fc-daygrid-event {
+  background-color: #185f33 !important;
+}
+.fc-theme-standard td,
+.fc-theme-standard th {
+  border-width: 2px !important;
+}
+.fc .fc-highlight {
+  background-color: #707070 !important;
+}
+.fc-event:hover,
+.ui-widget {
+  color: #000000cb !important;
+}
