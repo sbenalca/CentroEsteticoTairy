@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InformacionService } from '../informacion.service';
 
 @Component({
   selector: 'app-equipo',
@@ -8,11 +9,18 @@ import { Component, OnInit } from '@angular/core';
 export class EquipoComponent implements OnInit {
   integrantes;
 
-  constructor() { 
-    this.integrantes=require("src/assets/integrantes.json");
-  }
+  constructor(private informacionService: InformacionService) {}
+
 
   ngOnInit(): void {
+    this.getIntegrantes();
+  }
+
+  getIntegrantes(): void{
+    this.informacionService.getIntegrantes().subscribe((data: any)=>{
+      this.integrantes=data;
+      console.log(this.integrantes);
+    });
   }
 
 }

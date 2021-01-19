@@ -13,6 +13,11 @@ import { PromocionesComponent } from './promociones/promociones.component';
 import { SloganComponent } from './slogan/slogan.component';
 import { WhatsappComponent } from './whatsapp/whatsapp.component';
 import { LoginComponent } from './login/login.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { DatePipe } from "@angular/common";
+import { InformacionService } from './informacion.service';
+
 import { AdminViewModule} from './admin-view/admin-view.module';
 import { IonicModule } from '@ionic/angular';
 import { FullCalendarModule } from '@fullcalendar/angular'; // the main connector. must go first
@@ -40,9 +45,10 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AppRoutingModule,
     AdminViewModule,
     IonicModule.forRoot(),
-    FullCalendarModule
+    FullCalendarModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DatePipe,InformacionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

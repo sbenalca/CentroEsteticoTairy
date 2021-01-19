@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { InformacionService } from '../informacion.service';
 
 @Component({
   selector: 'app-servicios',
@@ -7,6 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiciosComponent implements OnInit {
   servicios;
+
+  constructor(private informacionService: InformacionService){}
+
+
+
+  ngOnInit(): void {
+    this.getTratamientos();
+    this.filtrarNom();
+  }
+
+  getTratamientos(): void{
+    this.informacionService.getTratamientos().subscribe((data: any)=>{
+      this.servicios=data;
+      console.log(this.servicios);
+    });
+  }
 
   mostrar(){
     let boton = document.getElementById("ver-mas");
@@ -49,12 +66,5 @@ export class ServiciosComponent implements OnInit {
     
   }
 
-  constructor() { 
-    this.servicios=require("src/assets/tratamientos.json");
-  }
-
-  ngOnInit(): void {
-    this.filtrarNom();
-  }
 
 }
