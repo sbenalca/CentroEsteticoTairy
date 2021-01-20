@@ -15,8 +15,6 @@ export class IndexComponent implements OnInit {
   introJS = introJs();
 
   constructor(private informacionService: InformacionService) {
-    //this.comentarios= require("src/assets/comments.json");
-    //this.active = this.comentarios.shift();
     this.introJS.setOptions({
       steps: [
         { 
@@ -45,7 +43,7 @@ export class IndexComponent implements OnInit {
   getComentarios(): void{
     this.informacionService.getComentarios().subscribe((data: any)=>{
       this.comentarios=data;
-      console.log(this.comentarios);
+      this.active = this.comentarios.shift();
     });
   }
   
