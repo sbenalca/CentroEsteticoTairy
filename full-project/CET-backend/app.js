@@ -10,7 +10,8 @@ const cors = require("cors");
 var indexRouter = require('./routes/index');
 const nodb = require("./collections");
 var app = express();
-const db = require("./models");
+
+const db = require("./models/model.js");
 db.sequelize.sync();
 var corsOptions = {origin: "http://localhost:4200"};
 
