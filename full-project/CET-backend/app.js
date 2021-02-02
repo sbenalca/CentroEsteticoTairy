@@ -8,9 +8,10 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 
 var indexRouter = require('./routes/index');
-
+const nodb = require("./collections");
 var app = express();
-
+const db = require("./models");
+db.sequelize.sync();
 var corsOptions = {origin: "http://localhost:4200"};
 
 app.use(cors(corsOptions)); 
