@@ -11,8 +11,8 @@ var indexRouter = require('./routes/index');
 const nodb = require("./collections");
 var app = express();
 
-const db = require("./models/model.js");
-db.sequelize.sync();
+const db = require("./models");
+
 var corsOptions = {origin: "http://localhost:4200"};
 
 app.use(cors(corsOptions)); 

@@ -1,28 +1,22 @@
 module.exports = (sequelize, DataTypes) => {
-    const Persona = sequelize.define("persona",{
-        idpersona:{
+    const TipoServicio = sequelize.define("tiposervicio",{
+        idtiposervicio:{
             type: DataTypes.STRING,
             primaryKey: true
         },
         nombre : {
             type: DataTypes.STRING
         },
-        apellido : {
+        descripcion : {
             type: DataTypes.STRING
         },
-        direccion : {
+        idarea : {
             type: DataTypes.STRING
         },
-        correo : {
-            type: DataTypes.STRING
-        },
-        telefono: {
-            type: DataTypes.STRING
-        }
     },
     {
-        tableName: 'persona',
+        tableName: 'tiposervicio',
         timestamps: false
     });
-    return Persona;
+    return TipoServicio;
 };

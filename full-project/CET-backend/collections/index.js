@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const db_path =  nodbConfig.dialect + "://" + nodbConfig.HOST + "/" + nodbConfig.noDB;
 const config = {
   useNewUrlParser: true,
-  useCreateIndex: true,
+  useCreateIndex: false,
   useFindAndModify: false,
   useUnifiedTopology: true,
   poolSize: 4,
