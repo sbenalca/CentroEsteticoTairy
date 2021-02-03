@@ -13,6 +13,7 @@ router.get('/', function(req, res, next) {
 });
 
 //router.get('/comentarios',clienteController.allComentarios);
+//router.get('/noticias',clienteController.allNoticias);
 //router.get('/integrantes',clienteController.allIntegrantes);
 //router.get('/tratamientos',clienteController.allTratamientos);
 router.get('/pruebaBase', function(req,res,next){
