@@ -5,7 +5,6 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { EquipoComponent } from './equipo/equipo.component';
 import { PromocionesComponent } from './promociones/promociones.component';
 import { ServiciosComponent } from './servicios/servicios.component';
-import { DashboardComponent } from './admin-view/dashboard/dashboard.component';
 import { EstadisticaComponent } from './admin-view/estadistica/estadistica.component';
 import { CalendarioComponent } from './admin-view/calendario/calendario.component';
 import { LoginComponent } from './login/login.component';
@@ -17,8 +16,7 @@ const routes: Routes = [
   { path: "promociones", component: PromocionesComponent },
   { path: "servicios", component: ServiciosComponent },
   { path: "login", component: LoginComponent },
-  { path: "dashboard", component: DashboardComponent },
-  { path: "estadistica", component: EstadisticaComponent },
+  { path: "dashboard", component: EstadisticaComponent },
   { path: "calendario", component: CalendarioComponent }
 ];
 
