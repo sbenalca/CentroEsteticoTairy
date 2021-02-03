@@ -20,4 +20,5 @@ export class InformacionService {
   getIntegrantes(): Observable<any> {
     return this.http.get("http://localhost:3000/integrantes");
   }
+
 }
