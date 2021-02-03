@@ -54,7 +54,7 @@ export class InformacionService {
   }
 
   postNuevoUsuario(form): Observable<any> {
-    return this.http.post("http://localhost:3000/usuarios/nuevo",form);
+    return this.http.post("http://localhost:3000/personas/",form);
   }
 
 }
