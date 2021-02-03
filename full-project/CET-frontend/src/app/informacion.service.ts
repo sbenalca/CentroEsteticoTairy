@@ -45,4 +45,8 @@ export class InformacionService {
     return this.http.get("http://localhost:3000/servicios");
   }
 
+  postContactanos(form): Observable<any> {
+    return this.http.post("http://localhost:3000/contactanos/email",form);
+  }
+
 }

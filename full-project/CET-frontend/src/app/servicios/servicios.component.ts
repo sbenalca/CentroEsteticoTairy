@@ -27,7 +27,6 @@ export class ServiciosComponent implements OnInit {
       });
       forkJoin(observablesList).subscribe((data:any) => {
         this.tipos=data;
-        console.log(this.tipos)
       });
     })
   }
