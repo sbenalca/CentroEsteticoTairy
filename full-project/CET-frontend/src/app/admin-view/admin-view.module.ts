@@ -16,6 +16,8 @@ import interactionPlugin from '@fullcalendar/interaction';
 import { PruebaComponent } from './prueba/prueba.component';
 import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {CalendarmetodosService} from './calendarmetodos.service';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ServiceDashComponent } from './serviceDash/serviceDash.component';
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
   interactionPlugin,
@@ -24,7 +26,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
 ]);
 
 @NgModule({
-  declarations: [DashboardComponent, EstadisticaComponent, SidebarComponent, NavbarAdminComponent, CalendarioComponent, PruebaComponent],
+  declarations: [DashboardComponent, EstadisticaComponent, SidebarComponent, NavbarAdminComponent, CalendarioComponent, PruebaComponent, UsuariosComponent, ServiceDashComponent],
   imports: [
     BrowserModule,
     CommonModule,

@@ -9,6 +9,8 @@ import { DashboardComponent } from './admin-view/dashboard/dashboard.component';
 import { EstadisticaComponent } from './admin-view/estadistica/estadistica.component';
 import { CalendarioComponent } from './admin-view/calendario/calendario.component';
 import { LoginComponent } from './login/login.component';
+import { UsuariosComponent } from './admin-view/usuarios/usuarios.component';
+import { ServiceDashComponent } from './admin-view/serviceDash/serviceDash.component';
 
 const routes: Routes = [
   { path: "", component: IndexComponent },
@@ -19,7 +21,10 @@ const routes: Routes = [
   { path: "login", component: LoginComponent },
   { path: "dashboard", component: DashboardComponent },
   { path: "estadistica", component: EstadisticaComponent },
-  { path: "calendario", component: CalendarioComponent }
+  { path: "calendario", component: CalendarioComponent },
+  { path: "usuarios", component: UsuariosComponent },
+  { path: "serviciosDash", component: ServiceDashComponent }
+  
 ];
 
 @NgModule({

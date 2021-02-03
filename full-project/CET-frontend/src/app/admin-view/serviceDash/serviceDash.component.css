@@ -1,0 +1,199 @@
+.root {
+    --primary: #7db63d !important;
+    --light: #ffffff;
+    --grey: #efefef;
+    --green: #7db63d;
+}
+body {
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+    
+}
+.bg-light {
+  background-color: #7db63d !important;
+}
+.notificacion {
+  color: #ffffff !important;
+}
+.notificacion:hover {
+  color: #000000 !important;
+}
+a:hover {
+  text-decoration: none;
+  color: #7db63d !important;
+}
+.iconColor {
+  color: #7db63d !important;
+}
+.iconColor:hover {
+  color: #000000 !important;
+}
+.bg-primary {
+  background-color: var(--light) !important;
+}
+#sidebar-container {
+  min-height: 100vh;
+}
+#sidebar-container .logo {
+  padding: 0.875rem 1.25rem;
+}
+.btn-search {
+  right: 5px;
+}
+.btn-redondo {
+  border-radius: 30px;
+}
+.img-usuario {
+  max-width: 35px;
+}
+.fondoColor {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40%;
+    background-color: #7db63d;
+    z-index: -1;
+}
+.w-100{
+  overflow-y: auto;
+  height: 100vh;
+  padding-bottom: 10rem;
+}
+
+.servicios{
+  padding: 20px 15px 5px 20px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 5px 3px #8898aa;
+  border-radius: 10px;
+}
+.logo1{
+  position: relative;
+  top:-80px;
+  left: 450px;
+}
+.especificaciones{
+  margin:24px;
+  position: relative; 
+  top:-50px;
+}
+#botonAdser{
+  margin-left: 700px;
+}
+#botonExdata, #botonAdser{
+  border-color: #7db63d;
+  color: #7db63d;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: small;
+}
+#botonSeguir{
+  font-weight: lighter;
+  border-color: #7db63d;
+  color: #7db63d;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-size: small;
+
+}
+.tituloServicio{
+  color:#7db63d;
+  font-size: large;
+  font: bold 90% sans-serif;
+  margin-left: 10px;
+  padding-bottom: 10px;
+}
+.switch-button {
+  display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+  background-color: #fff;
+  border:3px;
+  width: 40px;
+  height: 20px;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+  box-shadow: inset 0px 0px 0px 1px #7db63d;
+}
+.switch-button .switch-button__label:before {
+  transition: .2s;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fdffff;
+  border:3px;
+  content: '';
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 0px 1px #7db63d;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: #7db63d;
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(20px);
+}
+table{
+   width: 100%;
+   font-weight: bold;
+  font-size: small;
+  text-align-last: center;
+}
+th{
+  background-color: #f1f3f9;
+  color:#8898aa;
+  font-size: small;
+  padding: 11px
+}
+tr:nth-child(2n+1){
+  background: #f7fafc;
+}
+#listaTratamiento{
+  color: #172b4d;
+}
+#circulo {
+  width: 10px;
+  height: 10px;
+  color:#7db63d;
+  background-color: #7db63d;
+  border-radius: 50px;
+}
+input[type='radio'] { 
+ -webkit-appearance: none; 
+} 
+progress[value]{
+  width: 150px;
+  height: 7px;
+  -webkit-appearance: none;
+   appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #b7c1cc;
+  border-radius: 5px;
+  
+}
+progress[value]#progTratam{
+  width: 60px;
+  height: 5px;
+  -webkit-appearance: none;
+   appearance: none;
+}
+
+progress[value]#progTratam::-webkit-progress-value{
+  background-color: #e41a1c;
+   border-radius: 5px
+}
+
+#pag_btn{
+  background-color: #7db63d;
+  border-radius: 5px;
+  border: 10px;
+  color: #ffffff;
+}
+
