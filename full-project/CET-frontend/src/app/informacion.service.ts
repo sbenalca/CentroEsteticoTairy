@@ -17,6 +17,10 @@ export class InformacionService {
     return this.http.get("http://localhost:3000/promociones");
   }
 
+  getEstadisticasPromociones(): Observable<any> {
+    return this.http.get("http://localhost:3000/promociones/estadisticas");
+  }
+
   getUsuario(usuario) : Observable<any>{
     let url = "http://localhost:3000/personas/searchUsuario?id="+usuario
     return this.http.get(url);
@@ -47,6 +51,14 @@ export class InformacionService {
 
   getTratamientos(): Observable<any> {
     return this.http.get("http://localhost:3000/servicios");
+  }
+
+  getEstaditicasCitas(): Observable<any> {
+    return this.http.get("http://localhost:3000/citas/estadisticas");
+  }
+
+  getEstadisticas(): Observable<any> {
+    return this.http.get("http://localhost:3000/estadisticas");
   }
 
   postContactanos(form): Observable<any> {

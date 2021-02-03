@@ -11,6 +11,7 @@ var indexRouter = require('./routes/index');
 var comentariosRouter = require('./routes/comentario.routes');
 var promocionesRouter = require('./routes/promocion.routes');
 var personasRouter = require('./routes/personas.routes');
+var citasRouter = require('./routes/cita.routes');
 var areaRouter = require('./routes/area.routes');
 var servicioRouter = require('./routes/servicios.routes');
 var tiposervicioRouter = require('./routes/tiposervicio.routes');
@@ -48,6 +49,7 @@ app.use('/personas', personasRouter);
 app.use('/areas', areaRouter);
 app.use('/servicios', servicioRouter);
 app.use('/tiposervicios', tiposervicioRouter);
+app.use('/citas', citasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

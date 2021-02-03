@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,Input, ElementRef} from '@angular/core';
+import { InformacionService } from '../../informacion.service';
 import * as d3 from "d3";
 
 @Component({
@@ -7,32 +8,45 @@ import * as d3 from "d3";
   styleUrls: ['./pie.component.css']
 })
 export class PieComponent implements OnInit {
-  private data = [
-    {"Framework": "Vue", "Stars": "166443", "Released": "2014"},
-    {"Framework": "React", "Stars": "150793", "Released": "2013"},
-    {"Framework": "Angular", "Stars": "62342", "Released": "2016"},
-    {"Framework": "Backbone", "Stars": "27647", "Released": "2010"},
-    {"Framework": "Ember", "Stars": "21471", "Released": "2011"},
-  ];
+  @Input() grafico;
+  data;
+
 
   private svg;
   private margin = 50;
-  private width = 750;
-  private height = 600;
+  private width = 500;
+  private height = 500;
 
   private radius = Math.min(this.width, this.height) / 2 - this.margin;
   private colors;
 
-  constructor() { }
+  constructor(private informacionService: InformacionService, private container: ElementRef) { }
 
   ngOnInit(): void {
-    this.createSvg();
-    this.createColors();
-    this.drawChart();
+    if(this.grafico=="Citas"){
+      this.getDataCitas();
+    }else if(this.grafico=="Promos"){
+      this.getDataPromos();
+    }
+ 
+  }
+
+  getDataCitas(): void{
+    this.informacionService.getEstaditicasCitas().subscribe((data: any)=>{
+      this.data=data;
+      this.createSvg();
+    })
+  }
+
+  getDataPromos(): void{
+    this.informacionService.getEstadisticasPromociones().subscribe((data: any)=>{
+      this.data=data;
+      this.createSvg();
+    })
   }
 
   private createSvg(): void {
-    this.svg = d3.select("figure#pie")
+    this.svg = d3.select(this.container.nativeElement).select("figure#pie")
     .append("svg")
     .attr("width", this.width)
     .attr("height", this.height)
@@ -41,16 +55,18 @@ export class PieComponent implements OnInit {
       "transform",
       "translate(" + this.width / 2 + "," + this.height / 2 + ")"
     );
+    this.createColors();
 }
 
   private createColors(): void {
     this.colors = d3.scaleOrdinal()
-    .domain(this.data.map(d => d.Stars.toString()))
-    .range(["#c7d3ec", "#a5b8db", "#879cc4", "#677795", "#5a6782"]);
+    .domain(this.data.map(d => d.Cantidad.toString()))
+    .range(["#c7d3ec", "#a5b8db", "#879cc4"]);
+    this.drawChart();
   }
 
   private drawChart(): void {
-    const pie = d3.pie<any>().value((d: any) => Number(d.Stars));
+    const pie = d3.pie<any>().value((d: any) => Number(d.Cantidad));
 
     this.svg
     .selectAll('pieces')
@@ -74,7 +90,7 @@ export class PieComponent implements OnInit {
     .data(pie(this.data))
     .enter()
     .append('text')
-    .text(d => d.data.Framework)
+    .text(d => d.data.Area)
     .attr("transform", d => "translate(" + labelLocation.centroid(d) + ")")
     .style("text-anchor", "middle")
     .style("font-size", 15);

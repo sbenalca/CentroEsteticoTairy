@@ -16,6 +16,11 @@ router.post("/contactanos/email", emailController.send);
 
 router.post("/login",loginController.login);
 
+router.get("/estadisticas",function(req,res,next){
+  data=require("../resources/stats.json")
+  res.send(data)
+});
+
 router.post('/pruebaBase', function(req,res,next){
     Persona.findAll({})
     .then(data=>{
