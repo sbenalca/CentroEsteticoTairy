@@ -1,7 +1,7 @@
 module.exports = {
     HOST: "localhost",
-    USER: "phpmyadmin",
-    PASSWORD: "nsaproot",
+    USER: "",
+    PASSWORD: "",
     DB: "CET",
     dialect: "mysql",
     pool: {
