@@ -6,6 +6,7 @@
 -- Tiempo de generación: 02-02-2021 a las 20:38:41
 -- Versión del servidor: 8.0.23-0ubuntu0.20.04.1
 -- Versión de PHP: 7.4.3
+USE cet;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -36,6 +37,8 @@ CREATE TABLE `administrador` (
   `idpersona` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+INSERT INTO `administrador` (`idadmin`, `contrasena`, `cedula`, `idpersona`) VALUES
+(1, '1234', '0752698412', 8);
 -- --------------------------------------------------------
 
 --
@@ -334,3 +337,5 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
