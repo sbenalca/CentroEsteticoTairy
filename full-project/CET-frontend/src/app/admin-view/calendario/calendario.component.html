@@ -1,63 +1,77 @@
 <div class="d-flex fondoColor">
   <app-sidebar></app-sidebar>
   <app-navbar-admin></app-navbar-admin>
-  <full-calendar id="calendar" [options]="calendarOptions"></full-calendar>
+  <full-calendar id="calendar" #fullcalendar></full-calendar>
 </div>
 <form (submit)="enviar()">
-<div class="modal fade" id="agendaModal" tabindex="-1" aria-labelledby="date" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal fade" id="agendaModal" tabindex="-1" aria-labelledby="date" aria-hidden="true">
+    <div class="modal-dialog">
       <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="date">Agendar Cita</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-              </button>
-          </div>
-          <div class="modal-body">
-              <div  id="process" class="bs-stepper vertical">
-                  <div class="bs-stepper-content">
-                      <form name="datos-agendar">
-                          <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
-
-                                <div  *ngFor="let j of servicios">
-                                  <select>
-                                    <option value={{j.idservicio}}>{{j.nombre}}</option>
-                                  </select>
-                                  </div>
-
-                                  <div class="form-group">
-                                      <label for="nombre" class="col-form-label">Nombre de Persona</label>
-                                      <input type="text" [(ngModel)]="user.nombre" class="form-control" id="nombre" name="nombre"/>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for="message-text" class="col-form-label">Servicio</label>
-                                      <textarea class="form-control" [(ngModel)]="user.descripcion" id="message-text" name="servicio"></textarea>
-                                  </div>
-                              </div>
-
-                          <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
-                              <div>
-                                  <label for="inicio" class="col-form-label">Hora de inicio</label>
-                                  <input type="time" id="inicio" name="inicio" min="08:00" max="18:00" required>
-                                  <label for="fin" class="col-form-label">Hora de fin</label>
-                                  <input type="time" id="fin" name="fin" min="08:00" max="18:00" required>
-                              </div>
-                          </div>
-                  </form>
+        <div class="modal-header">
+          <h5 class="modal-title" id="date">Agendar Cita</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="process" class="bs-stepper vertical">
+            <div class="bs-stepper-content">
+              <form name="datos-agendar">
+                <div id="logins-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
+                  <div class="form-group">
+                    <label for="nombre" class="col-form-label">Nombre de Persona</label>
+                    <input type="text" [(ngModel)]="user.nombre" class="form-control" id="nombre" name="nombre" />
+                  </div>
+                  <div class="form-group">
+                    <label for="nombre" class="col-form-label">Apellido de persona</label>
+                    <input type="text" [(ngModel)]="user.apellido" class="form-control" id="apellido" name="apellido" />
+                  </div>
+                  <div class="form-group">
+                    <label for="nombre" class="col-form-label">Dirección</label>
+                    <input type="text" [(ngModel)]="user.direccion" class="form-control" id="direccion" name="direccion" />
+                  </div>
+                  <div class="form-group">
+                    <label for="nombre" class="col-form-label">Correo</label>
+                    <input type="text" [(ngModel)]="user.correo" class="form-control" id="correo" name="correo" />
+                  </div>
+                  <div class="form-group">
+                    <label for="nombre" class="col-form-label">Teléfono</label>
+                    <input type="text" [(ngModel)]="user.telefono" class="form-control" id="telefono" name="telefono" />
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label">Servicio</label>
+                    <div>
+                      <select id="selector" >
+                        <option *ngFor="let j of servicios" value={{j.idservicio}}>{{j.nombre}}</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
-          </div>
-          <div class="modal-footer">
-            <div>
-              <button id="agendar" class="btn btn-primary" type="submit">Agendar</button>
+
+                <div id="information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+                  <div>
+                    <label for="inicio" class="col-form-label">Hora de Cita</label>
+                    <input type="time" id="inicio" [(ngModel)]="user.fechahora" name="inicio" min="08:00" max="18:00" required>
+                  </div>
+                </div>
+              </form>
             </div>
-            <div>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                  Cerrar
-              </button>
-            </div>
           </div>
+        </div>
+        <div class="modal-footer">
+          <div>
+            <button id="agendar" class="btn btn-primary" type="submit">Agendar</button>
+          </div>
+          <div>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+              Cerrar
+            </button>
+          </div>
+        </div>
       </div>
+    </div>
   </div>
-</div>
 </form>
+<div class="modal fade" id="agendaModal2" tabindex="-1" aria-labelledby="date" aria-hidden="true">
+  <p>Cita Guardada</p>
+</div>

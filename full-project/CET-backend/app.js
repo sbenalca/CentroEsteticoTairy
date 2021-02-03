@@ -14,6 +14,7 @@ var personasRouter = require('./routes/personas.routes');
 var areaRouter = require('./routes/area.routes');
 var servicioRouter = require('./routes/servicios.routes');
 var tiposervicioRouter = require('./routes/tiposervicio.routes');
+var citasRouter = require('./routes/cita.routes');
 
 const nodb = require("./collections");
 var app = express();
@@ -48,6 +49,7 @@ app.use('/personas', personasRouter);
 app.use('/areas', areaRouter);
 app.use('/servicios', servicioRouter);
 app.use('/tiposervicios', tiposervicioRouter);
+app.use('/cita',citasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

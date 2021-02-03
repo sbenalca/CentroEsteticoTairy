@@ -44,3 +44,4 @@ exports.findEmpleados = (req, res) => {
         res.send(data)
     })
 };
+

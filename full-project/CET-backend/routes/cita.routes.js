@@ -3,6 +3,6 @@ var router = express.Router();
 const citaController = require('../controllers/cita.controller.js');
 
 
-router.post('/guardarCita', citaController.guardarCita);
-
+router.post('/generarCita',citaController.guardarCita);
+router.get('/citasbuscar',citaController.findAllCita);
 module.exports = router;
