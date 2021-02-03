@@ -20,6 +20,7 @@ import { DatePipe } from "@angular/common";
 import { InformacionService } from './informacion.service';
 import { LoginService } from './login.service';
 
+
 import { CookieService } from 'ngx-cookie-service';
 import { AdminViewModule} from './admin-view/admin-view.module';
 import { IonicModule } from '@ionic/angular';

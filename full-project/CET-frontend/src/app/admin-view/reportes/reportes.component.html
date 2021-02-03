@@ -1,0 +1,30 @@
+
+<div class="d-flex fondoColor">
+    <app-sidebar></app-sidebar>
+    <app-navbar-admin></app-navbar-admin>
+    <div class="contenedor">
+        
+        <div id="reporte">
+            <div id="texto">
+                <H2>Reporte de comentarios</H2>
+                <div class="comentario" *ngFor="let c of comentarios;let i=index;trackBy:trackByOption">
+                    <ng-container *ngFor="let ci of c.comentarios">
+                        
+                            <div>
+                                <p>Nombre del Cliente: {{this.usuarios[i][0].nombre}} {{this.usuarios[i][0].apellido}}</p>
+                                <p>Fecha del comentario: {{ci.fecha}}</p>
+                                <p>Mensaje: {{ci.mensaje}}</p>
+                                <hr>
+                            </div>
+                        
+                    </ng-container>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+  </div>
+  

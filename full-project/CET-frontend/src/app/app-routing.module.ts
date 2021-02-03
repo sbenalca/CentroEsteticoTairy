@@ -10,6 +10,7 @@ import { CalendarioComponent } from './admin-view/calendario/calendario.componen
 import { LoginComponent } from './login/login.component';
 import { UsuariosComponent } from './admin-view/usuarios/usuarios.component';
 import { ServiceDashComponent } from './admin-view/serviceDash/serviceDash.component';
+import { ReportesComponent } from './admin-view/reportes/reportes.component';
 
 const routes: Routes = [
   { path: "", component: IndexComponent },
@@ -22,7 +23,8 @@ const routes: Routes = [
   { path: "estadistica", component: EstadisticaComponent },
   { path: "calendario", component: CalendarioComponent },
   { path: "usuarios", component: UsuariosComponent },
-  { path: "serviciosDash", component: ServiceDashComponent }
+  { path: "serviciosDash", component: ServiceDashComponent },
+  { path: "reportes", component: ReportesComponent }
   
 ];
 

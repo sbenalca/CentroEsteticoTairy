@@ -19,7 +19,9 @@ import {CalendarmetodosService} from './calendarmetodos.service';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ServiceDashComponent } from './serviceDash/serviceDash.component';
 import { BarComponent } from './bar/bar.component';
-import { PieComponent } from './pie/pie.component'; // a plugin
+import { PieComponent } from './pie/pie.component';
+import { ReportesService } from './reportes.service';
+import { ReportesComponent } from './reportes/reportes.component'; // a plugin
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
   interactionPlugin,
@@ -28,7 +30,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
 ]);
 
 @NgModule({
-  declarations: [DashboardComponent, EstadisticaComponent, SidebarComponent, NavbarAdminComponent, CalendarioComponent, PruebaComponent, UsuariosComponent, ServiceDashComponent,BarComponent,PieComponent],
+  declarations: [DashboardComponent, EstadisticaComponent, SidebarComponent, NavbarAdminComponent, CalendarioComponent, PruebaComponent, UsuariosComponent, ServiceDashComponent,BarComponent,PieComponent, ReportesComponent],
   imports: [
     BrowserModule,
     CommonModule,
