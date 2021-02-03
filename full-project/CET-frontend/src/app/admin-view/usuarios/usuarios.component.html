@@ -10,7 +10,7 @@
         <section class="serEncabezado">
             <h2 class="tituloUsuario">Usuarios</h2>
             <p class="tituloUsuario">
-                <button type="button" id="botonAgregar">Agregar nuevo usuario</button>
+                <button type="button" id="botonAgregar" (click)="enable()">Agregar nuevo usuario</button>
             </p>
             <div id="listaUsuarios">
                 <table id="mitabla"> 
@@ -35,6 +35,43 @@
 
         </section>
     </section>
+    <div id="formContainer" *ngIf="visibility">
+        <div id="formLayout"> 
+            <form (submit)="enviar()">
+                <legend>Déjanos un mensaje</legend>
+
+                <div class="form-group row">
+                    <label for="nusuario-nombre">Nombre: *</label>
+                    <input type="text" [(ngModel)]="form.nombre" class="form-control" id="nusuario-nombre" placeholder="Escribe tu nombre aquí." name="nombre">
+                </div>
+
+                <div class="form-group row">
+                    <label for="nusuario-nombre">Apellido: *</label>
+                    <input type="text" [(ngModel)]="form.apellido" class="form-control" id="nusuario-apellido" placeholder="Escribe tu apellido aquí." name="apellido">
+                </div>
+
+                <div class="form-group row">
+                    <label for="nusuario-direccion">Dirección: *</label>
+                    <input type="text" [(ngModel)]="form.apellido" class="form-control" id="nusuario-direccion" placeholder="Escribe tu direccion aquí." name="direccion">
+                </div>
+
+
+                <div class="form-group row">
+                    <label for="nusuario-mail">Correo Electrónico: *</label>
+                    <input type="email" [(ngModel)]="form.correo" class="form-control" id="nusuario-mail" placeholder="ejemplo@gmail.com" name="email">
+                </div>
+
+                <div class="form-group row">
+                    <label for="nusuario-telefono">Teléfono: *</label>
+                    <input type="text" [(ngModel)]="form.telefono" class="form-control" id="nusuario-telefono" placeholder="0987654321" name="telefono">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+
+    </div>
+    
     
     
 </div>

@@ -199,3 +199,67 @@ progress[value]#progTratam::-webkit-progress-value{
   border: 10px;
   color: #ffffff;
 }
+
+#formContainer{
+  background-color: #7db63d;
+  position: fixed;
+  transform: translateX(-50%);
+  left:50%;
+  padding: 5px;
+  border: 3px solid #f1f1f1;
+  z-index: 100;
+}
+
+#formContainer div{
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: center;
+  
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#formLayout {
+    
+  background-color: #ffffff !important;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem !important;
+  /* display: none; */
+}
+
+
+#formLayout legend {
+  color: #185f33;
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  font-family: 'Beyond The Mountains', sans-serif;
+  
+  
+}
+
+
+
+#formLayout label{
+  text-align: left;
+  margin-right: auto;
+}
+
+.btn-primary{
+  margin-top: 1.5rem;
+  background-color: #185f33;
+  border-color: #185f33;
+  border-radius: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.btn-primary:hover{
+  
+  background-color: #7db63d;
+  border-color: #185f33;
+  border: 5px;
+
+}

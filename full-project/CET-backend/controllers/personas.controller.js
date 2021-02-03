@@ -51,3 +51,9 @@ exports.findEmpleados = (req, res) => {
         res.send(data)
     })
 };
+
+exports.createUser = (req, res)=> {
+  
+    
+
+};

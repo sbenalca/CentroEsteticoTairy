@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, Renderer2 } from '@angular/core';
 import { InformacionService } from '../../informacion.service';
 import { forkJoin } from 'rxjs';
+import { ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-usuarios',
@@ -9,11 +10,20 @@ import { forkJoin } from 'rxjs';
 })
 
 export class UsuariosComponent implements OnInit {
+  @ViewChild("formLayout") myForm: ElementRef;
+  visibility = false;
   empleados;
   integrantes;
   areas;
+  form = {
+    nombre:"",
+    apellido:"",
+    direccion:"",
+    correo:"",
+    telefono: ""
+  }
 
-  constructor(private informacionService: InformacionService) {}
+  constructor(private informacionService: InformacionService, private renderer: Renderer2) {}
 
   getUsuarios(): void{
     const observablesListPersonas = [];
@@ -40,5 +50,16 @@ export class UsuariosComponent implements OnInit {
   ngOnInit() {
     this.getUsuarios();
   }
+
+  enviar(){
+    this.visibility = false;
+    this.informacionService.postNuevoUsuario(this.form).subscribe((data: any)=>{
+  })
+
+  }
+
+  enable(){
+    this.visibility = true;
+   }
 
 }
