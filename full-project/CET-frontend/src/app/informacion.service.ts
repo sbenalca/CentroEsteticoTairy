@@ -69,4 +69,12 @@ export class InformacionService {
     return this.http.post("http://localhost:3000/personas/",form);
   }
 
+  putUsuario(form): Observable<any> {
+    return this.http.put("http://localhost:3000/personas/",form);
+  }
+
+  delUsuario(form): Observable<any> {
+    return this.http.delete("http://localhost:3000/personas/",form);
+  }
+
 }

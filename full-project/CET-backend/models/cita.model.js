@@ -2,7 +2,8 @@ module.exports = (sequelize, DataTypes) => {
     const Cita = sequelize.define("cita",{
         idcita:{
             type: DataTypes.STRING,
-            primaryKey: true
+            primaryKey: true,
+            autoIncrement: true,
         },
         fecha : {
             type: DataTypes.STRING

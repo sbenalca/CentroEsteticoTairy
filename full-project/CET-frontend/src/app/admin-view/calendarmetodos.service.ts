@@ -13,9 +13,13 @@ export class CalendarmetodosService {
   constructor(private http: HttpClient) { }
 
   enviar(user){
-    return this.http.post(this.URL+"pruebaBase",user);
+    return this.http.post(this.URL+"cita/generarCita",user);
   }
   getservicios(): Observable<any> {
     return this.http.get("http://localhost:3000/servicios");
+  }
+
+  getevents(): Observable<any>{
+    return this.http.get("http://localhost:3000/cita/citasbuscar");
   }
 }

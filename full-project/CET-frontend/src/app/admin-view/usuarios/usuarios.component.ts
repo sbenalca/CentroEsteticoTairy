@@ -16,12 +16,13 @@ export class UsuariosComponent implements OnInit {
   integrantes;
   areas;
   form = {
+    idempleado:"",
     nombre:"",
     apellido:"",
     direccion:"",
     correo:"",
     telefono: ""
-  }
+  };
 
   constructor(private informacionService: InformacionService, private renderer: Renderer2) {}
 
@@ -53,10 +54,20 @@ export class UsuariosComponent implements OnInit {
 
   enviar(){
     this.visibility = false;
-    this.informacionService.postNuevoUsuario(this.form).subscribe((data: any)=>{
-  })
-
+    this.informacionService.postNuevoUsuario(this.form).subscribe((data: any)=>{})
   }
+
+  actualizar(){
+    this.visibility = true;
+    this.informacionService.putUsuario(this.form).subscribe((data: any)=>{})
+  }
+
+
+  eliminar(){
+    this.visibility = false;
+    this.informacionService.delUsuario(this.form).subscribe((data: any)=>{})
+  }
+
 
   enable(){
     this.visibility = true;
