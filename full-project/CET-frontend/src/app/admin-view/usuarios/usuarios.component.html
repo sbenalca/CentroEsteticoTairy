@@ -21,6 +21,8 @@
                         <th>ÁREA</th>
                         <th>CORREO</th>
                         <th>TELEFONO</th>
+                        <th>Eliminar</th>
+                        <th>Modificar</th>
                     </tr>
                     <tr *ngFor="let j of empleados;let i=index;trackBy:trackByOption">
                         <td>{{j.idempleado}}</td>
@@ -29,6 +31,12 @@
                         <td>{{areas[i][0].nombre}}</td>
                         <td>{{integrantes[i][0].correo}}</td>
                         <td>{{integrantes[i][0].telefono}}</td>
+                        <td>
+                            <button type="button" id="botonEliminar" (click)="enable()">X</button>
+                        </td>
+                        <td>
+                            <button type="button" id="botonEditar" (click)="enable()">U</button>
+                        </td>
                     </tr>
                 </table>
             </div>
