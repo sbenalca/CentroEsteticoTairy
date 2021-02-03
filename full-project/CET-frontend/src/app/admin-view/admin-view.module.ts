@@ -18,6 +18,8 @@ import {FormsModule,ReactiveFormsModule} from '@angular/forms';
 import {CalendarmetodosService} from './calendarmetodos.service';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ServiceDashComponent } from './serviceDash/serviceDash.component';
+import { BarComponent } from './bar/bar.component';
+import { PieComponent } from './pie/pie.component'; // a plugin
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
   interactionPlugin,
@@ -26,7 +28,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
 ]);
 
 @NgModule({
-  declarations: [DashboardComponent, EstadisticaComponent, SidebarComponent, NavbarAdminComponent, CalendarioComponent, PruebaComponent, UsuariosComponent, ServiceDashComponent],
+  declarations: [DashboardComponent, EstadisticaComponent, SidebarComponent, NavbarAdminComponent, CalendarioComponent, PruebaComponent, UsuariosComponent, ServiceDashComponent,BarComponent,PieComponent],
   imports: [
     BrowserModule,
     CommonModule,

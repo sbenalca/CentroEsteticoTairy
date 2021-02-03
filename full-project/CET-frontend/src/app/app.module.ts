@@ -25,8 +25,6 @@ import { AdminViewModule} from './admin-view/admin-view.module';
 import { IonicModule } from '@ionic/angular';
 import { FullCalendarModule } from '@fullcalendar/angular'; // the main connector. must go first
 import dayGridPlugin from '@fullcalendar/daygrid';
-import { BarComponent } from './bar/bar.component';
-import { PieComponent } from './pie/pie.component'; // a plugin
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin
@@ -44,8 +42,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     SloganComponent,
     WhatsappComponent,
     LoginComponent,
-    BarComponent,
-    PieComponent
+    
    ],
   imports: [
     BrowserModule,
