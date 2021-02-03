@@ -57,13 +57,10 @@ export class IndexComponent implements OnInit {
     })
   }
 
-<<<<<<< HEAD
-=======
   trackByOption(index, option) {
     return option;
   } 
 
->>>>>>> 0d1aa67daece6c7ff2a22793ef96c00f7f966db9
   ngOnInit(): void {
     this.getComentarios();
     this.introJS.start();
