@@ -22,6 +22,10 @@ export class InformacionService {
     return this.http.get(url);
   }
 
+  getUsuarios() : Observable<any>{
+    return this.http.get("http://localhost:3000/personas/usuarios");
+  }
+
   getIntegrantes(): Observable<any> {
     return this.http.get("http://localhost:3000/personas/empleados");
   }

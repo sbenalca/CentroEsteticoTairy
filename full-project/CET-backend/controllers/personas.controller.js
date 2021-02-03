@@ -28,6 +28,13 @@ exports.findUsuario = (req, res) => {
     })
 };
 
+exports.findUsuarios = (req, res) => {
+    Usuario.findAll({})
+    .then(data => {
+        res.send(data)
+    })
+};
+
 exports.findEmpleado = (req, res) => {
     Empleado.findAll({  where: { cedula: req.query.id}})
     .then(data => {
