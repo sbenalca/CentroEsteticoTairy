@@ -61,6 +61,14 @@
     color: #185f33;
 }
 
+.sliderCet{
+    position: relative;
+    height: 80vh;
+    overflow: hidden;
+}
+
+
+
 /* tarjetitas */
 #promos h3{
     margin-top: 1%;

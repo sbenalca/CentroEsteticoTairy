@@ -22,6 +22,7 @@ export class PromocionesComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getPromociones();
   }
 
 }
