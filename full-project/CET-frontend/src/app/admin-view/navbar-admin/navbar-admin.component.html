@@ -6,16 +6,7 @@
           <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse row" id="navbarSupportedContent">
-          <div class="col-sm-10">
-              <form class="form-inline my-2 d-inline-block position-relative">
-                  <input class="btn-redondo form-control mr-sm-2" type="search" placeholder="Search"
-                      aria-label="Buscar">
-                  <button class="btn position-absolute btn-search" type="submit">
-                    <ion-icon class="icon ion-md-search lead" name="search"></ion-icon>
-                      <!-- <ion-icon class="icon ion-md-search lead"></ion-icon> -->
-                  </button>
-              </form>
-          </div>
+          
       </div>
       <a href="#" class="notificacion d-block p-3 ">
           <!-- <ion-icon class="icon ion-md-notifications-outline lead"></ion-icon> -->
@@ -29,12 +20,10 @@
           <a class="notificacion nav-link dropdown-toggle" href="#" role="button" id="navbarDropdown"
               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="../../../assets/usuario.png" class="img-fluid rounded-circle mr-2 img-usuario" alt="">
-              Nombre Usuario
+              Adminitrador
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Perfil</a>
-              <a class="dropdown-item" href="#">Cambiar Contraseña</a>
-              <a class="dropdown-item" href="#">Cerrar Seccion</a>
+              <a class="dropdown-item" href="#" (click)="logout()">Cerrar Sesion</a>
           </div>
       </div>
   </nav>

@@ -1,0 +1,40 @@
+
+<div class="d-flex fondoColor">
+  <app-sidebar></app-sidebar>
+  <app-navbar-admin></app-navbar-admin>
+  
+  
+    
+  
+    <section class="servicios">
+        <h4 class="tituloServicio">Centro Estético Tairy</h4>
+        <section class="serEncabezado">
+            <h2 class="tituloServicio">Servicios</h2>
+            <p class="tituloServicio">
+                <button type="button" id="botonAdser">Administrar Servicios</button>
+                <button type="button" id="botonExdata">Export Data</button>
+                <button type="button" id="botonSeguir">+</button>
+            </p>
+            <div id="listaTratamiento">
+                <table id="mitabla"> 
+                    <tr id="usuario">
+                        <th>ID SERVICIO</th>
+                        <th>NOMBRE</th>
+                        <th>COSTO</th>
+                        <th>RECURSOS</th>
+                        <th>TIPO SERVICIO</th>
+                    </tr>
+                    <tr *ngFor="let j of servicios;let i=index;trackBy:trackByOption">
+                        <td>{{j.idservicio}}</td>
+                        <td>{{j.nombre}}</td>
+                        <td>{{j.costo}}</td>
+                        <td>{{j.maquina}}</td>
+                        <td>{{tipos[i][0].nombre}}</td>
+                    </tr>
+                </table>
+            </div>
+
+        </section>
+    </section>
+  
+</div>

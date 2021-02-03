@@ -2,45 +2,23 @@
   <app-sidebar></app-sidebar>
   <app-navbar-admin></app-navbar-admin>
 
-
   <div class="especificaciones">
     <ul class="item-especificaicones item1 item1a">
-      <li class="li-1">TOTAL TRAFICC</li>
-      <li class="li-2">123,456</li>
+      <li class="li-2">{{clientes}}</li>
       <li class="li-3c">
-        <div class="li-3aA">+3.48%</div>
-        <div class="li-3aB">Since last month</div>
-      </li>
-      <li>
-        <div class="item1b">
-          <img id="incre" src="../../../assets/incremento.PNG" alt="" />
-        </div>
+        <div class="li-3aB">Clientes registrados</div>
       </li>
     </ul>
     <ul class="item-especificaicones item2 item2a">
-      <li class="li-1">NEW USERS</li>
-      <li class="li-2">2,345</li>
+      <li class="li-2">{{empleados}}</li>
       <li class="li-3c">
-        <div class="li-3bA">-3.48%</div>
-        <div class="li-3bB">Since last month</div>
-      </li>
-      <li>
-        <div class="item2b">
-          <img id="decre" src="../../../assets/decremento.PNG" alt="" />
-        </div>
+        <div class="li-3aB">Empleados registrados</div>
       </li>
     </ul>
     <ul class="item-especificaicones item3 item3a">
-      <li class="li-1">PERFORMANCE</li>
-      <li class="li-2">48.65%</li>
+      <li class="li-2">{{servicios}}</li>
       <li class="li-3c">
-        <div class="li-3cA">+3.48%</div>
-        <div class="li-3cB">Since last month</div>
-      </li>
-      <li>
-        <div class="item3b">
-          <img id="decrin" src="../../../assets/Captura.PNG" alt="" />
-        </div>
+        <div class="li-3aB">Servicios registrados</div>
       </li>
     </ul>
     <ul class="item-img">
@@ -50,24 +28,12 @@
     </ul>
     <div class="graficas">
       <div class="partners">
-        <p id="tituloPart">PARTNERS</p>
-        <p id="subtituloPart">Subscriptions Traffic</p>
-        <!--img id="Gbarras" src="diseno\img\graficaBarras.PNG"-->
-        <canvas id="myChart"></canvas>
-        <!--script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-          <div id="plotlyChart"></div>
-          <script src="cuadrosEstadisticos.js"></script-->
+        <p id="tituloPart">CITAS POR AREAS</p>
+        <app-pie grafico="Citas"></app-pie>
       </div>
       <div class="OVERVIEW">
-        <div class="texOver">
-          <p id="tituloOver">OVERVIEW</p>
-          <p id="subtituloOver">Budget</p>
-        </div>
-        <div class="botonOver">
-          <button type="button" id="botoncall">Call to Action</button>
-        </div>
-        <!--img id="Gpastel" src="diseno\img\graficaPastel.PNG"-->
-        <canvas id="myChartPastel"></canvas>
+          <p id="tituloOver">PROMOCIONES POR AREA</p>
+          <app-pie grafico="Promos"></app-pie>
       </div>
     </div>
     <div class="ubicaciones">
@@ -75,49 +41,24 @@
         <div class="tituloMap">
           <p id="tituloMap">
             Clientes por Ciudad
-            <button type="button" id="botonMapa">View Full Report</button>
           </p>
         </div>
         <div class="map">
-          <svg id="my_dataviz"></svg>
-          <div id="progresos">
-            <p>Pais 1</p>
-            <p>
-              <progress id="file1" value="20" max="100">32%</progress>
-            </p>
-            <p>Pais 2</p>
-            <p>
-              <progress id="file2" value="50" max="100">32%</progress>
-            </p>
-            <p>Pais 3</p>
-            <p>
-              <progress id="file3" value="80" max="100">32%</progress>
-            </p>
-            <p>Pais 4</p>
-            <p>
-              <progress id="file4" value="40" max="100">32%</progress>
-            </p>
-          </div>
+          <app-bar></app-bar>
         </div>
-        <button type="button" id="botonmas">+</button>
-        <button type="button" id="botonmenos">-</button>
       </div>
       <div class="consejos">
         <div class="imgConsejo">
           <img class="img-fluid rounded d-block m-l-none" id="imgConsejos" src="../../../assets/consejo.PNG" alt="" />
         </div>
         <div class="textoConsejo">
-          <p id="tituloConsejo">Deep dive in Nature TIPS</p>
-          <p id="autorConsejo">By John Snow on Apr 30th at 12:45 PM</p>
+          <p id="tituloConsejo">Siempre recuerda la mision!</p>
           <p id="contenidoConsejo">
             Excepteur sint occaecat cupidatat non proident, sunt in culpa
             qui officia deserunt mollit anim id est eopksio laborum. Sed
             ut perspiciatis unde omnis istpoe natus error sit voluptatem
             accusantium doloremque….
           </p>
-          <button type="button" id="botonedit" onclick="editarConsejo(this)">
-            Edit Tip
-          </button>
         </div>
       </div>
     </div>

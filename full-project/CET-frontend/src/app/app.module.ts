@@ -18,11 +18,13 @@ import {CommonModule} from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from "@angular/common";
 import { InformacionService } from './informacion.service';
+import { LoginService } from './login.service';
 
+import { CookieService } from 'ngx-cookie-service';
 import { AdminViewModule} from './admin-view/admin-view.module';
 import { IonicModule } from '@ionic/angular';
 import { FullCalendarModule } from '@fullcalendar/angular'; // the main connector. must go first
-import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin
+import dayGridPlugin from '@fullcalendar/daygrid';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin
@@ -35,11 +37,12 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     IndexComponent,
     EquipoComponent,
     ServiciosComponent,
-      ContactoComponent,
-      PromocionesComponent,
-      SloganComponent,
-      WhatsappComponent,
-      LoginComponent
+    ContactoComponent,
+    PromocionesComponent,
+    SloganComponent,
+    WhatsappComponent,
+    LoginComponent,
+    
    ],
   imports: [
     BrowserModule,
@@ -52,7 +55,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     ReactiveFormsModule,
     CommonModule
   ],
-  providers: [DatePipe,InformacionService],
+  providers: [DatePipe,InformacionService,LoginService,CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

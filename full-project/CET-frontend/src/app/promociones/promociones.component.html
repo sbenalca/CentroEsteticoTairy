@@ -4,8 +4,14 @@
 
 <section id="noticias">
 
-  <div id="comentarios-carousel" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause:hover>
+  <div id="comentarios-carousel" class="carousel slide sliderCet" data-ride="carousel" data-interval="3000" data-pause:hover>
       <div class="carousel-inner" data-intro='Carrusel de comentarios de nuestros clientes'>
+            <div class="carousel-item active">
+                <img class="comentarios-image" src={{active.img}} alt={{active.descripcion}} height=50%>
+            </div>
+            <div class="carousel-item" *ngFor="let j of promociones">
+                <img class="comentarios-image" src={{j.img}} alt={{j.descripcion}} height=50%>
+            </div>
       </div>
       <a class="carousel-control-prev" href="#comentarios-carousel" role="button" data-slide="prev">
         <i class="icon-control fas fa-chevron-left"></i>
@@ -24,22 +30,22 @@
   <div id="faciales" class="row">
       <h3 class="col-lg-12">Promociones en tratamientos Faciales</h3>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones1.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones1.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones1.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones1.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
@@ -48,22 +54,22 @@
   <div id="corporales" class="row">
       <h3 class="col-lg-12">Promociones en tratamientos Corporales</h3>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones2.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones2.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones2.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones2.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
@@ -71,22 +77,22 @@
   <div id="reductores" class="row">
       <h3 class="col-lg-12">Promociones en tratamientos Reductores</h3>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones2.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones2.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones2.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>
       <div class="promo col-lg-2">
-          <img src="../assets/servicios1.jpg" alt="Promo 1">
+          <img src="../assets/promociones2.jpg" alt="Promo 1">
           <h2>Promo 2x1</h2>
           <p>qui voluptate voluptate nostrud aliqua magna laborum mollit labore culpa</p>
       </div>

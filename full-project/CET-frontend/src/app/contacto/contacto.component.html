@@ -11,35 +11,39 @@
       <img src="../assets/servicios1.jpg" alt="imagen" class="col-lg-5">
       <div  class="col-lg-7">
           <div id="formLayout"> 
-              <form>
+              <form (submit)="enviar()">
                   <legend>Déjanos un mensaje</legend>
 
                   <div class="form-group row">
                       <label for="contact-nombre">Nombre: *</label>
-                      <input type="text" class="form-control" id="contact-nombre" placeholder="Escribe tu nombre completo aquí.">
+                      <input type="text" [(ngModel)]="form.nombre" class="form-control" id="contact-nombre" placeholder="Escribe tu nombre completo aquí." name="nombre">
                   </div>
 
                   <div class="form-group row">
                       <label for="contact-nacimiento">Fecha de nacimiento: *</label>
-                      <input type="date" class="form-control" id="contact-nacimiento" name="nacimiento" value="2020-12-03" min="1950-12-03" max="2002-12-03">
+                      <input type="date" [(ngModel)]="form.fecha" class="form-control" id="contact-nacimiento" name="nacimiento" value="2020-12-03" min="1950-12-03" max="2002-12-03">
                   </div>
                   
                   <div class="form-group row">
                       <label for="contact-ciudad">Ciudad: *</label>
-                      <select id="contact-ciudad" class="form-control">
+                      <select id="contact-ciudad" [(ngModel)]="form.ciudad" class="form-control" name="ciudad">
                         <option selected>Selecciona una ciudad...</option>
+                        <option value="Guayaquil">Guayaquil</option>
+                        <option value="Samborondon">Samborondon</option>
+                        <option value="Daule">Daule</option>
+                        <option value="Duran">Duran</option>
                       </select>
                   </div>
 
 
                   <div class="form-group row">
                       <label for="contact-mail">Correo Electrónico: *</label>
-                      <input type="email" class="form-control" id="contact-mail" placeholder="ejemplo@gmail.com" >
+                      <input type="email" [(ngModel)]="form.correo" class="form-control" id="contact-mail" placeholder="ejemplo@gmail.com" name="email">
                   </div>
 
                   <div class="form-group row">
                       <label for="contact-detalle">Mensaje: *</label>
-                      <textarea class="form-control" id="contact-detalle" placeholder="Escribe tu mensaje aquí." rows="3"></textarea>
+                      <textarea class="form-control" [(ngModel)]="form.mensaje" id="contact-detalle" placeholder="Escribe tu mensaje aquí." rows="3" name="mensaje"></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>

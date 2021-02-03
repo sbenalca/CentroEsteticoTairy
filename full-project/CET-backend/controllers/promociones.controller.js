@@ -13,3 +13,8 @@ exports.findOne = (req, res) => {
         res.send(docs)
     })
 };
+
+exports.estadisticas = (req,res)=>{
+    data = require("../resources/statsPromos.json")
+    res.send(data)
+};

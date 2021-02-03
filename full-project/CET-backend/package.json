@@ -13,10 +13,12 @@
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.11.14",
     "morgan": "~1.9.1",
     "mysql2": "^2.2.5",
     "node-dev": "^6.2.0",
+    "nodemailer": "^6.4.17",
     "sequelize": "^6.5.0"
   }
 }
