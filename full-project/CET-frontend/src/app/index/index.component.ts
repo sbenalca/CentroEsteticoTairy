@@ -20,7 +20,7 @@ export class IndexComponent implements OnInit {
   constructor(private informacionService: InformacionService) {
     this.introJS.setOptions({
       steps: [
-        { 
+        {
           intro: "Bienvenido a nuestra pagina!! Comencemos con el recorrido"
         },
         {
@@ -64,6 +64,6 @@ export class IndexComponent implements OnInit {
   ngOnInit(): void {
     this.getComentarios();
     this.introJS.start();
-  }  
+  }
 
 }

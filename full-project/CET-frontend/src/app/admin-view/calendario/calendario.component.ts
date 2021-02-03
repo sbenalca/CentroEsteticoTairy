@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { CalendarOptions, DateSelectArg, EventClickArg, EventApi } from '@fullcalendar/angular';
 import { INITIAL_EVENTS, createEventId } from './event-utils';
+import {CalendarmetodosService} from '../calendarmetodos.service';
+
 import esLocale from '@fullcalendar/core/locales/es';
 @Component({
   selector: 'app-calendario',
@@ -8,6 +10,11 @@ import esLocale from '@fullcalendar/core/locales/es';
   styleUrls: ['./calendario.component.css']
 })
 export class CalendarioComponent implements OnInit {
+  user = {
+    nombre: "",
+    descripcion: ""
+  }
+  servicios;
   calendarVisible = true;
   calendarOptions: CalendarOptions = {
     headerToolbar: {
@@ -45,7 +52,10 @@ export class CalendarioComponent implements OnInit {
   }
 
   handleDateSelect(selectInfo: DateSelectArg) {
-    const title = prompt('Please enter a new title for your event');
+    ($("#agendaModal") as any).modal('show');
+    //$("#agendaModal").modal();
+    /* const title = prompt('Please enter a new title for your event');
+
     const calendarApi = selectInfo.view.calendar;
 
     calendarApi.unselect(); // clear date selection
@@ -58,11 +68,11 @@ export class CalendarioComponent implements OnInit {
         end: selectInfo.endStr,
         allDay: selectInfo.allDay
       });
-    }
+    } */
   }
 
   handleEventClick(clickInfo: EventClickArg) {
-    if (confirm(`Are you sure you want to delete the event '${clickInfo.event.title}'`)) {
+    if (confirm(`Deseas eliminar esta cita '${clickInfo.event.title}'`)) {
       clickInfo.event.remove();
     }
   }
@@ -71,9 +81,32 @@ export class CalendarioComponent implements OnInit {
     this.currentEvents = events;
   }
 
-  constructor() { }
+  constructor(private calendarmetodosService: CalendarmetodosService) { }
 
   ngOnInit(): void {
+    this.getservicios();
+    console.log(this.user);
+    console.log(this.servicios);
+  }
+
+  getservicios(): void{
+    this.calendarmetodosService.getservicios().subscribe((data: any)=>{
+      this.servicios=data;
+    });
+  }
+
+  enviar(){
+    this.calendarmetodosService.enviar(this.user)
+    .subscribe(
+      res => {
+        console.log(res);
+      },
+      err => {
+        console.log(err);
+      }
+
+    );
+    ($("#agendaModal") as any).modal('hide');
   }
 
 }

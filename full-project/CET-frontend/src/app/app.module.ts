@@ -13,7 +13,8 @@ import { PromocionesComponent } from './promociones/promociones.component';
 import { SloganComponent } from './slogan/slogan.component';
 import { WhatsappComponent } from './whatsapp/whatsapp.component';
 import { LoginComponent } from './login/login.component';
-
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import {CommonModule} from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { DatePipe } from "@angular/common";
 import { InformacionService } from './informacion.service';
@@ -46,7 +47,10 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     AdminViewModule,
     IonicModule.forRoot(),
     FullCalendarModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule
   ],
   providers: [DatePipe,InformacionService],
   bootstrap: [AppComponent]
