@@ -52,8 +52,6 @@ exports.findEmpleados = (req, res) => {
     })
 };
 
-<<<<<<< HEAD
-=======
 exports.create = (req, res)=> {
 
     const personaNueva = {
@@ -121,4 +119,3 @@ exports.delete = (req, res) => {
 exports.deleteAll = (req, res) => {
   
 };
->>>>>>> 00be01c6446c471496856bc64150ff77deb0b8a4

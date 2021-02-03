@@ -50,11 +50,7 @@ app.use('/personas', personasRouter);
 app.use('/areas', areaRouter);
 app.use('/servicios', servicioRouter);
 app.use('/tiposervicios', tiposervicioRouter);
-<<<<<<< HEAD
 app.use('/cita',citasRouter);
-=======
-app.use('/citas', citasRouter);
->>>>>>> 00be01c6446c471496856bc64150ff77deb0b8a4
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

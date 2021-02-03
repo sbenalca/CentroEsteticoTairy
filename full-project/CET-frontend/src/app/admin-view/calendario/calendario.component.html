@@ -1,7 +1,7 @@
 <div class="d-flex fondoColor">
   <app-sidebar></app-sidebar>
   <app-navbar-admin></app-navbar-admin>
-  <full-calendar id="calendar" #fullcalendar></full-calendar>
+  <full-calendar id="calendar" [options]="calendarOptions"></full-calendar>
 </div>
 <form (submit)="enviar()">
   <div class="modal fade" id="agendaModal" tabindex="-1" aria-labelledby="date" aria-hidden="true">

@@ -59,7 +59,6 @@ exports.guardarCita = (req, res) => {
         })
 
 
-<<<<<<< HEAD
 
 
 
@@ -74,8 +73,7 @@ exports.findAllCita = (req,res) =>{
         res.send(data);
     });
 };
-=======
-}
+
 
 
 exports.findAll = (req, res) => {
@@ -89,4 +87,3 @@ exports.estadisticas = (req,res)=>{
   data = require("../resources/statsCitas.json")
   res.send(data)
 };
->>>>>>> 00be01c6446c471496856bc64150ff77deb0b8a4
