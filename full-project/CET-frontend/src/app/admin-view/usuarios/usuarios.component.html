@@ -13,7 +13,24 @@
                 <button type="button" id="botonAgregar">Agregar nuevo usuario</button>
             </p>
             <div id="listaUsuarios">
-                <!--lista de tratamientos-->
+                <table id="mitabla"> 
+                    <tr id="usuario">
+                        <th>ID USUARIO</th>
+                        <th>NOMBRE</th>
+                        <th>CÉDULA</th>
+                        <th>ÁREA</th>
+                        <th>CORREO</th>
+                        <th>TELEFONO</th>
+                    </tr>
+                    <tr *ngFor="let j of empleados;let i=index;trackBy:trackByOption">
+                        <td>{{j.idempleado}}</td>
+                        <td>{{integrantes[i][0].nombre}} {{integrantes[i][0].apellido}}</td>
+                        <td>{{j.cedula}}</td>
+                        <td>{{areas[i][0].nombre}}</td>
+                        <td>{{integrantes[i][0].correo}}</td>
+                        <td>{{integrantes[i][0].telefono}}</td>
+                    </tr>
+                </table>
             </div>
 
         </section>
@@ -21,9 +38,6 @@
     
     
 </div>
-
-
-
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
