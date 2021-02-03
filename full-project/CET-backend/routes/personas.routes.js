@@ -9,7 +9,7 @@ router.get('/searchUsuario', personaController.findUsuario);
 router.get('/usuarios', personaController.findUsuarios);
 router.get('/searchEmpleado', personaController.findEmpleado);
 router.get('/empleados', personaController.findEmpleados);
-router.get('/nuevo', personaController.send);
+router.get('/nuevo', personaController.createUser);
 
 
 module.exports = router;
