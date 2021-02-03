@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InformacionService } from '../informacion.service';
+import { forkJoin } from 'rxjs';
 
 @Component({
   selector: 'app-servicios',
@@ -8,10 +9,9 @@ import { InformacionService } from '../informacion.service';
 })
 export class ServiciosComponent implements OnInit {
   servicios;
+  tipos;
 
   constructor(private informacionService: InformacionService){}
-
-
 
   ngOnInit(): void {
     this.getTratamientos();
@@ -19,11 +19,24 @@ export class ServiciosComponent implements OnInit {
   }
 
   getTratamientos(): void{
+    const observablesList = [];
     this.informacionService.getTratamientos().subscribe((data: any)=>{
       this.servicios=data;
-      console.log(this.servicios);
-    });
+      this.servicios.forEach(s => {
+        observablesList.push(this.informacionService.getTipo(s.idtiposervicio));
+      });
+      forkJoin(observablesList).subscribe((data:any) => {
+        this.tipos=data;
+        console.log(this.tipos)
+      });
+    })
   }
+
+
+  trackByOption(index, option) {
+    return option;
+  } 
+
 
   mostrar(){
     let boton = document.getElementById("ver-mas");
@@ -46,10 +59,10 @@ export class ServiciosComponent implements OnInit {
         if(boton!=null){
           boton.style.display="none";
         }
-        let valor = (<HTMLInputElement>input)?.value;
+        let valor = (<HTMLInputElement>input)?.value.toLowerCase();
         let dato = document.getElementsByClassName("servicio");
         for (let i = 0; i < dato.length; i++) {
-            let compare = dato[i].getElementsByTagName("h2")[0].innerText
+            let compare = dato[i].getElementsByTagName("h2")[0].innerText.toLowerCase()
             if (compare.indexOf(valor)<0){
               dato.item(i)?.setAttribute("class","servicio col-lg-2 ocultar");
             } else {

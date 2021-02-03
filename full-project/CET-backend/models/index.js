@@ -25,7 +25,6 @@ db.Administrador = require("./administrador.model.js")(sequelize,Sequelize);
 db.Area = require("./area.model.js")(sequelize,Sequelize);
 db.Cita = require("./cita.model.js")(sequelize,Sequelize);
 db.Servicio = require("./servicio.model.js")(sequelize,Sequelize);
-db.ServicioPromocion = require("./serviciopromocion.model.js")(sequelize,Sequelize);
 db.TipoServicio = require("./tiposervicio.model.js")(sequelize,Sequelize);
 db.Usuario = require("./usuario.model.js")(sequelize,Sequelize);
 

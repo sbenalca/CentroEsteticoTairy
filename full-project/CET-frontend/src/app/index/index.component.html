@@ -36,17 +36,17 @@
             <div class="cliente">
                 <img class="comentarios-image" src="../../assets/usuario.png" alt="cliente">
                 <div class="comentarios-text">
-                    <p>{{active.comentario}}</p>
-                    <p>{{active.cliente}}</p>
+                    <p>{{active.comentarios[0].mensaje}}</p>
+                    <p>{{this.usuarios[0][0].nombre}} {{this.usuarios[0][0].apellido}}</p>
                 </div>
             </div>
           </div>
-          <div class="carousel-item" *ngFor="let j of comentarios">
+          <div class="carousel-item" *ngFor="let j of comentarios;let i=index;trackBy:trackByOption">
             <div class="cliente">
                 <img class="comentarios-image" src="../../assets/usuario.png" alt="cliente">
                 <div class="comentarios-text">
-                    <p>{{j.comentario}}</p>
-                    <p>{{j.cliente}}</p>
+                    <p>{{j.comentarios[0].mensaje}}</p>
+                    <p>{{this.usuarios[i+1][0].nombre}} {{this.usuarios[i+1][0].apellido}}</p>
                 </div>
             </div>
           </div>

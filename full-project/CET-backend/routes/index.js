@@ -14,6 +14,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Prueba backend CET' });
 });
 
+<<<<<<< HEAD
 router.get('/comentarios',clienteController.allComentarios);
 router.get('/integrantes',clienteController.allIntegrantes);
 router.get('/tratamientos',clienteController.allTratamientos);
@@ -28,6 +29,12 @@ router.post('/guardarCita', citaController.guardarCita);
 
 
 router.post('/pruebaBase', function(req,res,next){
+=======
+//router.get('/comentarios',clienteController.allComentarios);
+//router.get('/integrantes',clienteController.allIntegrantes);
+//router.get('/tratamientos',clienteController.allTratamientos);
+router.get('/pruebaBase', function(req,res,next){
+>>>>>>> 0d1aa67daece6c7ff2a22793ef96c00f7f966db9
     Persona.findAll({})
     .then(data=>{
       res.send(data);

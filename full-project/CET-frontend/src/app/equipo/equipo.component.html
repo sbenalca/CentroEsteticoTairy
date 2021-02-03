@@ -76,11 +76,11 @@
     <h1>El Equipo</h1>
     <hr>
     <div class="equipo-grid row">
-        <div class="integrante col-lg-5" *ngFor=" let j of integrantes">
+        <div class="integrante col-lg-5" *ngFor=" let j of integrantes;let i=index;trackBy:trackByOption">
             <img src="../../assets/usuario.png" alt="integrante">
-            <h2>{{j.integrante}}</h2>
-            <p>{{j.cargo}}</p>
-            <p>{{j.informacion}}</p>
+            <h2>{{j[0].nombre}} {{j[0].apellido}}</h2>
+            <p>{{j[0].correo}}</p>
+            <p>{{areas[i][0].nombre}}</p>
         </div>
     </div>
 

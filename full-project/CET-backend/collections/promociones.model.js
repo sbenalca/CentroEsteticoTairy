@@ -2,7 +2,7 @@ var mongoose = require('mongoose')
 
 const PromocionesSchema = new mongoose.Schema(
     {
-        id_promocion:{
+        _id:{
             type: String
         },
         costoRebaja: {
@@ -11,12 +11,17 @@ const PromocionesSchema = new mongoose.Schema(
         descripcion: {
             type: String
         },
-        fechaFializa:{
+        fechaFinaliza:{
             type: Date
+        },
+        servicios:{
+            type: [String]
+        },
+        img:{
+            type: String
         }
         
     }
 );
 
-var Promociones = mongoose.model('promociones',PromocionesSchema); 
-module.exports = {Promociones}
+module.exports = mongoose.model('promociones',PromocionesSchema,"promociones");

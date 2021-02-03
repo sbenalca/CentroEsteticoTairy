@@ -28,11 +28,11 @@
 
 <section id="lista-servicios">
   <div id="tratamientos" class="row">
-    <div class="servicio col-lg-2 filtrar" *ngFor="let j of servicios">
+    <div class="servicio col-lg-2 filtrar" *ngFor="let j of servicios;let i=index;trackBy:trackByOption">
       <img src="../../assets/tratamiento.png" alt="tratamiento">
       <h2>{{j.nombre}}</h2>
-      <p>{{j.descripcion}}</p>
-      <p class="categoria">{{j.categoria}}</p>
+      <p class="categoria">{{tipos[i][0].nombre}}</p>
+      <p>$ {{j.costo}}</p>
     </div>
   </div>
   <button id="ver-mas" class="btn btn-link btn-block text-center" type="button" (click)="mostrar()">
