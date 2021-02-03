@@ -13,6 +13,10 @@ export class InformacionService {
     return this.http.get("http://localhost:3000/comentarios");
   }
 
+  getPromociones(): Observable<any> {
+    return this.http.get("http://localhost:3000/promociones");
+  }
+
   getUsuario(usuario) : Observable<any>{
     let url = "http://localhost:3000/personas/searchUsuario?id="+usuario
     return this.http.get(url);
