@@ -41,5 +41,8 @@ export class InformacionService {
     return this.http.get("http://localhost:3000/servicios");
   }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 0d1aa67daece6c7ff2a22793ef96c00f7f966db9
 }

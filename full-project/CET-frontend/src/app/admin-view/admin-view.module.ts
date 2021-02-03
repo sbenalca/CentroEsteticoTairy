@@ -13,7 +13,9 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import listPlugin from '@fullcalendar/list';
 import interactionPlugin from '@fullcalendar/interaction';
-
+import { PruebaComponent } from './prueba/prueba.component';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+import {CalendarmetodosService} from './calendarmetodos.service';
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
   interactionPlugin,
@@ -22,13 +24,15 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
 ]);
 
 @NgModule({
-  declarations: [DashboardComponent, EstadisticaComponent, SidebarComponent, NavbarAdminComponent, CalendarioComponent],
+  declarations: [DashboardComponent, EstadisticaComponent, SidebarComponent, NavbarAdminComponent, CalendarioComponent, PruebaComponent],
   imports: [
     BrowserModule,
     CommonModule,
     IonicModule,
     AppRoutingModule,
-    FullCalendarModule
+    FullCalendarModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class AdminViewModule { }

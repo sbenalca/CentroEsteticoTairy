@@ -1,10 +1,12 @@
 var express = require('express');
 const db = require('../models/index.js');
 const Persona = db.Persona;
+const Servicio = db.Servicio;
 const Op = db.Sequelize.Op;
 var router = express.Router();
 
 const clienteController = require("../controllers/cliente.controller.js");
+const citaController = require('../controllers/cita.controller.js');
 const { persona } = require('../models');
 
 /* GET home page. */
@@ -12,10 +14,27 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Prueba backend CET' });
 });
 
+<<<<<<< HEAD
+router.get('/comentarios',clienteController.allComentarios);
+router.get('/integrantes',clienteController.allIntegrantes);
+router.get('/tratamientos',clienteController.allTratamientos);
+
+router.get('/servicios',function(req,res,next){
+  Servicio.findAll({})
+  .then(data => {
+    res.send(data);
+  });
+});
+router.post('/guardarCita', citaController.guardarCita);
+
+
+router.post('/pruebaBase', function(req,res,next){
+=======
 //router.get('/comentarios',clienteController.allComentarios);
 //router.get('/integrantes',clienteController.allIntegrantes);
 //router.get('/tratamientos',clienteController.allTratamientos);
 router.get('/pruebaBase', function(req,res,next){
+>>>>>>> 0d1aa67daece6c7ff2a22793ef96c00f7f966db9
     Persona.findAll({})
     .then(data=>{
       res.send(data);
