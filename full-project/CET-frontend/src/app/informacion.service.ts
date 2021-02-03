@@ -13,11 +13,33 @@ export class InformacionService {
     return this.http.get("http://localhost:3000/comentarios");
   }
 
-  getTratamientos(): Observable<any> {
-    return this.http.get("http://localhost:3000/tratamientos");
+  getUsuario(usuario) : Observable<any>{
+    let url = "http://localhost:3000/personas/searchUsuario?id="+usuario
+    return this.http.get(url);
   }
 
   getIntegrantes(): Observable<any> {
-    return this.http.get("http://localhost:3000/integrantes");
+    return this.http.get("http://localhost:3000/personas/empleados");
   }
+
+  getPersona(id):Observable<any> {
+    let url = "http://localhost:3000/personas/search?id="+id
+    return this.http.get(url);
+  }
+
+  getArea(id):Observable<any> {
+    let url = "http://localhost:3000/areas/search?id="+id
+    return this.http.get(url);
+  }
+
+  getTipo(id):Observable<any> {
+    let url = "http://localhost:3000/tiposervicios/search?id="+id
+    return this.http.get(url);
+  }
+
+  getTratamientos(): Observable<any> {
+    return this.http.get("http://localhost:3000/servicios");
+  }
+
+
 }
